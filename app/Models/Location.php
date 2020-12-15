@@ -52,6 +52,13 @@ class Location extends Model
     }
 
     /**
+     * Get the comments on the location.
+     */
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+
+    /**
      * Get the sources for the location.
      */
     public function sources() {
