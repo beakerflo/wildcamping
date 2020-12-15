@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Visit extends Model
+class Client extends Model
 {
     use HasFactory;
 
@@ -15,21 +15,14 @@ class Visit extends Model
      * @var array
      */
     protected $casts = [
-        'visited_at' => 'date',
+        'accessed_at' => 'date',
     ];
-    
 
     /**
-     * Get the user that made the visit
+     * Get the user that uses this client.
      */
     public function user() {
         return $this->belongsTo(User::class);
     }
 
-    /**
-     * Get the location of the visit
-     */
-    public function location() {
-        return $this->belongsTo(Location::class);
-    }
 }

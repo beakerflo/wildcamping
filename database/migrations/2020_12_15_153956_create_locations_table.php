@@ -17,7 +17,6 @@ class CreateLocationsTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('type_id');
-            $table->foreignId('source_id');
             $table->foreignId('coordinate_id');
             $table->foreignId('address_id');
             $table->string('name');

@@ -5,31 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Visit extends Model
+class Image extends Model
 {
     use HasFactory;
 
     /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'visited_at' => 'date',
-    ];
-    
-
-    /**
-     * Get the user that made the visit
+     * Get the user that uploaded the image.
      */
     public function user() {
         return $this->belongsTo(User::class);
     }
 
     /**
-     * Get the location of the visit
+     * Get the location for this image.
      */
     public function location() {
         return $this->belongsTo(Location::class);
     }
+    
 }
