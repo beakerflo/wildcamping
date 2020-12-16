@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->nullable();
             $table->foreignId('location_id');
-            $table->string('authorname');
+            $table->string('author');
             $table->string('contents');
             $table->timestamps();
             $table->softDeletes();

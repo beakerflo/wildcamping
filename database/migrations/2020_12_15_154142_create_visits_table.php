@@ -21,7 +21,7 @@ class CreateVisitsTable extends Migration
             $table->string('story')->nullable();
             $table->timestamps();
             $table->softDeletes();
-            $table->unique(['date', 'story']);
+            $table->unique(['visited_at', 'story']);
         });
     }
 

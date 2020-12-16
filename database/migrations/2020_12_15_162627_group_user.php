@@ -17,6 +17,7 @@ class GroupUser extends Migration
             $table->id();
             $table->foreignId('group_id');
             $table->foreignId('user_id');
+            $table->boolean('admin')->default(false);
             $table->softDeletes();
             $table->unique(['group_id', 'user_id']);
         });
