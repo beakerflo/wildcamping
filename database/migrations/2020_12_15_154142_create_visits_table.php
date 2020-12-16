@@ -18,7 +18,7 @@ class CreateVisitsTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('location_id');
             $table->date('visited_at');
-            $table->string('story')->nullable();
+            $table->text('story')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->unique(['visited_at', 'story']);
