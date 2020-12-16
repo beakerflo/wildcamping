@@ -28,7 +28,7 @@ class ImageFactory extends Factory
             'location_id' => Location::factory(),
             'name' => $this->faker->word,
             'description' => $this->faker->sentence,
-            'filename' => "{$this->faker->word}.jpg"
+            'filename' => $this->faker->word . mt_rand(1000,9999) . ".jpg"
         ];
     }
 }

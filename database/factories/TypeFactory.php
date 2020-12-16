@@ -24,7 +24,7 @@ class TypeFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
-            'name' => $this->faker->word,
+            'name' => $this->faker->unique->word,
             'description' => $this->faker->sentence,
         ];
     }

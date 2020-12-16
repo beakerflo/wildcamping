@@ -30,7 +30,7 @@ class LocationFactory extends Factory
             'type_id' => Type::factory(),
             'coordinate_id' => Coordinate::factory(),
             'address_id' => Address::factory(),
-            'name' => $this->faker->word,
+            'name' => $this->faker->unique->word,
             'description' => $this->faker->sentence
         ];
     }
