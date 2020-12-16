@@ -22,7 +22,7 @@ class CreateImagesTable extends Migration
             $table->string('filename');
             $table->timestamps();
             $table->softDeletes();
-            $table->unique(['user_id','filename']);
+            $table->unique(['filename']);
         });
     }
 
