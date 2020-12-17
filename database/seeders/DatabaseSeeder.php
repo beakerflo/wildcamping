@@ -38,12 +38,6 @@ class DatabaseSeeder extends Seeder
         }
 
         $Users = User::all();
-        foreach ($Users as $User) {
-            Group::factory()->hasAttached($User)->create();
-        }
-
-        Group::factory()->hasAttached($Users)->create();
-
         Comment::factory()->for(User::all()->random())->for(Location::all()->first())->count(2)->create();
         Comment::factory()->for(User::all()->random())->for(Location::all()->random())->count(2)->create();
 
@@ -51,6 +45,5 @@ class DatabaseSeeder extends Seeder
         Visit::factory()->for(User::all()->random())->for(Location::all()->random())->create();
 
         Client::factory()->for(User::all()->random())->count(3)->create();
-
     }
 }

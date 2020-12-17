@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class GroupUser extends Migration
+class CreateTeamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class GroupUser extends Migration
      */
     public function up()
     {
-        Schema::create('group_user', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('group_id');
-            $table->foreignId('user_id');
-            $table->boolean('admin')->default(false);
-            $table->softDeletes();
-            $table->unique(['group_id', 'user_id']);
+            $table->foreignId('user_id')->index();
+            $table->string('name');
+            $table->boolean('personal_team');
+            $table->timestamps();
         });
     }
 
@@ -30,6 +29,6 @@ class GroupUser extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group_user');
+        Schema::drop('teams');
     }
 }
