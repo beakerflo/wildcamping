@@ -10,6 +10,15 @@ class Tag extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'name',
+        'user_id',
+    ];
+
+    /**
      * Get the user that created the tag.
      */
     public function user() {

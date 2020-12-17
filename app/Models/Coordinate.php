@@ -10,6 +10,15 @@ class Coordinate extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'latitude',
+        'longitude',
+    ];
+
+    /**
      * Get the locations for this coordinate.
      */
     public function locations() {

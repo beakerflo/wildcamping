@@ -10,6 +10,20 @@ class Location extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'private',
+        'name',
+        'description',
+        'user_id',
+        'type_id',
+        'coordinate_id',
+        'address_id',
+    ];
+
+    /**
      * Get the user that created the location.
      */
     public function user() {

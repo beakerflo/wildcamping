@@ -10,6 +10,17 @@ class Visit extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'user_id',
+        'location_id',
+        'visited_at',
+        'story',
+    ];
+
+    /**
      * The attributes that should be cast to native types.
      *
      * @var array
@@ -18,7 +29,6 @@ class Visit extends Model
         'visited_at' => 'date',
     ];
     
-
     /**
      * Get the user that made the visit
      */

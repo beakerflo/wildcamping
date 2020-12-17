@@ -10,6 +10,19 @@ class Image extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'extension',
+        'name',
+        'description',
+        'filename',
+        'user_id',
+        'location_id',
+    ];
+
+    /**
      * Get the user that uploaded the image.
      */
     public function user() {

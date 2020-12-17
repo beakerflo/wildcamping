@@ -9,6 +9,14 @@ class Address extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'street',
+        'postal',
+        'city',
+        'country_id',
+        'user_id'
+    ];
+
     /**
      * Get the country belonging to the address.
      */

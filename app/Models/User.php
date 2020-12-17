@@ -26,7 +26,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 
+        'email', 
+        'password',
     ];
 
     /**
@@ -58,4 +60,46 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    /**
+     * Get the images uploaded by the user.
+     */
+    public function images() {
+        return $this->hasMany(Image::class);
+    }
+
+    /**
+     * Get the locations created by the user.
+     */
+    public function locations() {
+        return $this->hasMany(Location::class);
+    }
+
+    /**
+     * Get the sources used by the user.
+     */
+    public function sources() {
+        return $this->hasMany(Location::class);
+    }
+
+    /**
+     * Get the tags created by the user.
+     */
+    public function tags() {
+        return $this->hasMany(Tag::class);
+    }
+
+    /**
+     * Get the types created by the user.
+     */
+    public function types() {
+        return $this->hasMany(Type::class);
+    }
+
+    /**
+     * Get the visits created by the user.
+     */
+    public function visits() {
+        return $this->hasMany(Visit::class);
+    }
 }

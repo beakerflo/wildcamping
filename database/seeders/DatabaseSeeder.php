@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Client;
 use App\Models\Comment;
-use App\Models\Group;
 use App\Models\Location;
 use App\Models\Source;
 use App\Models\Tag;
@@ -43,7 +41,5 @@ class DatabaseSeeder extends Seeder
 
         Visit::factory()->for(User::all()->random())->for(Location::all()->random())->create();
         Visit::factory()->for(User::all()->random())->for(Location::all()->random())->create();
-
-        Client::factory()->for(User::all()->random())->count(3)->create();
     }
 }

@@ -10,6 +10,17 @@ class Comment extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'author',
+        'contents',
+        'location_id',
+        'user_id'
+    ];
+
+    /**
      * Get the user that wrote the comment.
      */
     public function user() {

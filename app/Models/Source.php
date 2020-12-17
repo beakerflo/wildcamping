@@ -10,6 +10,17 @@ class Source extends Model
     use HasFactory;
 
     /**
+     * Fillable fields of this model
+     *
+     */
+    protected $fillable = [
+        'name',
+        'link',
+        'description',
+        'user_id',
+    ];
+
+    /**
      * Get the user created the source.
      */
     public function user() {
