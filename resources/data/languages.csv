@@ -1,0 +1,865 @@
+locale;iso_code_2;iso_code_3;area;name
+aa;aa;aar;;Afar
+aa-ER;aa;aar;ER;Afar (ER)
+ady;;ady;;Adyghe
+af;af;afr;;Afrikaans
+af-NA;af;afr;NA;Afrikaans (NA)
+af-ZA;af;afr;ZA;Afrikaans (SA)
+agq;;agq;;Aghem
+agq-CM;;agq;CM;Aghem
+ak;ak;aka;;Akan
+ak-GH;ak;aka;GH;Akan
+am;am;amh;;Amharic
+am-ET;am;amh;ET;Amharic
+ar;ar;ara;;Arabic
+ar-AE;ar;ara;AE;Arabic (AE)
+ar-BH;ar;ara;BH;Arabic (BH)
+ar-DJ;ar;ara;DJ;Arabic (DJ)
+ar-DZ;ar;ara;DZ;Arabic (DZ)
+ar-EG;ar;ara;EG;Arabic (EG)
+ar-EH;ar;ara;EH;Arabic (EH)
+ar-ER;ar;ara;ER;Arabic (ER)
+ar-IL;ar;ara;IL;Arabic (IL)
+ar-IQ;ar;ara;IQ;Arabic (IQ)
+ar-JO;ar;ara;JO;Arabic (JO)
+ar-KM;ar;ara;KM;Arabic (KM)
+ar-KW;ar;ara;KW;Arabic (KW)
+ar-LB;ar;ara;LB;Arabic (LB)
+ar-LY;ar;ara;LY;Arabic (LY)
+ar-MA;ar;ara;MA;Arabic (MA)
+ar-MR;ar;ara;MR;Arabic (MR)
+ar-OM;ar;ara;OM;Arabic (OM)
+ar-PS;ar;ara;PS;Arabic (PS)
+ar-QA;ar;ara;QA;Arabic (QA)
+ar-SA;ar;ara;SA;Arabic (SA)
+ar-SD;ar;ara;SD;Arabic (SD)
+ar-SO;ar;ara;SO;Arabic (SO)
+ar-SS;ar;ara;SS;Arabic (SS)
+ar-SY;ar;ara;SY;Arabic (SY)
+ar-TD;ar;ara;TD;Arabic (TD)
+ar-TN;ar;ara;TN;Arabic (TN)
+ar-YE;ar;ara;YE;Arabic (YE)
+arc;;arc;;Imperial Aramaic 
+as;as;asm;;Assamese
+as-IN;as;asm;IN;Assamese
+asa;;asa;;Aasá
+asa-TZ;;asa;TZ;Aasá
+ast;;ast;;Asturian
+ast-ES;;ast;ES;Asturian
+av;av;ava;;Avaric
+ay;ay;;;Aymara
+az;az;aze;;Azerbaijani
+az-AZ;az;aze;AZ;Azerbaijani
+ba;ba;bak;;Bashkir
+bal;;bal;;Baluchi
+bas;;bas;;Basque
+bas-CM;;bas;CM;Basque
+be;be;bel;;Belarusian
+be-BY;be;bel;BY;Belarusian
+bem;;bem;;Bemba
+bem-ZM;;bem;ZM;Bemba
+ber;;ber;;Berber languages
+bez;;bez;;Bena
+bez-TZ;;bez;TZ;Bena
+bg;bg;bul;;Bulgarian
+bg-BG;bg;bul;BG;Bulgarian
+bh;bh;bih;;Bihari languages
+bho;;bho;;Bhojpuri
+bi;bi;bis;;Bislama
+bm;bm;bam;;Bambara
+bm-ML;bm;bam;ML;Bambara
+bn;bn;ben;;Bengali
+bn-BD;bn;ben;BD;Bengali (BD)
+bn-IN;bn;ben;IN;Bengali (IN)
+bo;bo;tib;;Tibetan
+bo-CN;bo;tib;CN;Tibetan (CN)
+bo-IN;bo;tib;IN;Tibetan (IN)
+br;br;bre;;Breton
+br-FR;br;bre;FR;Breton
+brh;;brh;;Brahui
+brx;;brx;;Bodo
+brx-IN;;brx;IN;Bodo
+bs;bs;bos;;Bosnian
+bs-BA;bs;bos;BA;Bosnian
+bua;;bua;;Buriat
+ca;ca;cat;;Catalan\Valencian
+ca-AD;ca;cat;AD;Catalan\Valencian (AD)
+ca-ES;ca;cat;ES;Catalan\Valencian (ES)
+ca-FR;ca;cat;FR;Catalan\Valencian (FR)
+ca-IT;ca;cat;IT;Catalan\Valencian (IT)
+cau;;cau;;Caucasian languages
+ccp;;ccp;;Chakma
+ccp-BD;;ccp;BD;Chakma (BD)
+ccp-IN;;ccp;IN;Chakma (IN)
+ce;ce;che;;Chechen
+ce-RU;ce;che;RU;Chechen
+ceb;;ceb;;Cebuano
+ceb-PH;;ceb;PH;Cebuano (PH)
+cgg;;cgg;;Kiga
+cgg-UG;;cgg;UG;Kiga
+ch-GU;ch;cha;GU;Chamorro (GU)
+ch-MP;ch;cha;MP;Chamorro (MP)
+chk;;chk;;Chuukese
+chm;;chm;;Mari
+chr;;chr;;Cherokee
+chr-US;;chr;US;Cherokee (US)
+ckb;;ckb;;Central Kurdish
+ckb-IQ;;ckb;IQ;Central Kurdish (IQ)
+ckb-IR;;ckb;IR;Central Kurdish (IR)
+cmn;;cmn;;Mandarin Chinese
+co_FR;co;cos;IT;Corsican (IT)
+co_IT;co;cos;FR;Corsican (FR)
+cs;cs;cze;;Czech
+cs-CZ;cs;cze;CZ;Czech
+cu;cu;chu;;Church Slavic\Old Slavonic\Church Slavonic\Old Bulgarian\Old Church Slavonic
+cu-RU;cu;chu;RU;Church Slavic\Old Slavonic\Church Slavonic\Old Bulgarian\Old Church Slavonic
+cv;cv;chv;;Chuvash
+cy;cy;wel;;Welsh
+cy-GB;cy;wel;GB;Welsh
+da;da;dan;;Danish
+da-DK;da;dan;DK;Danish
+da-FO;da;dan;FO;Danish (FO)
+da-GL;da;dan;GL;Danish (GL)
+dag;;dag;;Dagbani
+dav;;dav;;Dawida, Taita
+dav-KE;;dav;KE;Dawida, Taita
+de;de;ger;;German
+de-AT;de;ger;AT;German (AT)
+de-BE;de;ger;BE;German (BE)
+de-CH;de;ger;CH;German (CH)
+de-DE;de;ger;DE;German
+de-DK;de;ger;DK;German (DK)
+de-IT;de;ger;IT;German (IT)
+de-LI;de;ger;LI;German (LI)
+de-LU;de;ger;LU;German (LU)
+diq;;diq;;Dimli
+dje;;dje;;Zarma
+dje-NE;;dje;NE;Zarma
+doi;;doi;;Dogri
+dsb;;dsb;;Lower Sorbian
+dsb-DE;;dsb;DE;Lower Sorbian
+dua;;dua;;Duala
+dua-CM;;dua;CM;Duala
+dv;dv;div;;Dhivehi
+dyo;;dyo;;Jola-Fonyi
+dyo-SN;;dyo;SN;Jola-Fonyi
+dz;dz;dzo;;Dzongkha
+dz-BT;dz;dzo;BT;Dzongkha
+ebu;;ebu;;Igbo
+ebu-KE;;ebu;KE;Igbo
+ee;ee;ewe;;Ewe
+ee-GH;ee;ewe;GH;Ewe (GH)
+ee-TG;ee;ewe;TG;Ewe (TG)
+el;el;gre;;Greek, Modern
+el-CY;el;gre;CY;Greek, Modern (CY)
+el-GR;el;gre;GR;Greek, Modern
+en;en;eng;;English
+en-AE;en;eng;AE;English (AE)
+en-AG;en;eng;AG;English (AG)
+en-AI;en;eng;AI;English (AI)
+en-AS;en;eng;AS;English (AS)
+en-AT;en;eng;AT;English (AT)
+en-AU;en;eng;AU;English (AU)
+en-BB;en;eng;BB;English (BB)
+en-BE;en;eng;BE;English (BE)
+en-BI;en;eng;BI;English (BI)
+en-BM;en;eng;BM;English (BM)
+en-BN;en;eng;BN;English (BN)
+en-BS;en;eng;BS;English (BS)
+en-BW;en;eng;BW;English (BW)
+en-BZ;en;eng;BZ;English (BZ)
+en-CA;en;eng;CA;English (CA)
+en-CC;en;eng;CC;English (CC)
+en-CH;en;eng;CH;English (CH)
+en-CK;en;eng;CK;English (CK)
+en-CM;en;eng;CM;English (CM)
+en-CX;en;eng;CX;English (CX)
+en-CY;en;eng;CY;English (CY)
+en-DE;en;eng;DE;English (DE)
+en-DG;en;eng;DG;English (DG)
+en-DK;en;eng;DK;English (DK)
+en-DM;en;eng;DM;English (DM)
+en-ER;en;eng;ER;English (ER)
+en-ET;en;eng;ET;English (ET)
+en-FI;en;eng;FI;English (FI)
+en-FJ;en;eng;FJ;English (FJ)
+en-FK;en;eng;FK;English (FK)
+en-FM;en;eng;FM;English (FM)
+en-GB;en;eng;GB;English (GB)
+en-GD;en;eng;GD;English (GD)
+en-GG;en;eng;GG;English (GG)
+en-GH;en;eng;GH;English (GH)
+en-GI;en;eng;GI;English (GI)
+en-GM;en;eng;GM;English (GM)
+en-GU;en;eng;GU;English (GU)
+en-GY;en;eng;GY;English (GY)
+en-HK;en;eng;HK;English (HK)
+en-IE;en;eng;IE;English (IE)
+en-IL;en;eng;IL;English (IL)
+en-IM;en;eng;IM;English (IM)
+en-IN;en;eng;IN;English (IN)
+en-IO;en;eng;IO;English (IO)
+en-JE;en;eng;JE;English (JE)
+en-JM;en;eng;JM;English (JM)
+en-KE;en;eng;KE;English (KE)
+en-KI;en;eng;KI;English (KI)
+en-KN;en;eng;KN;English (KN)
+en-KY;en;eng;KY;English (KY)
+en-LC;en;eng;LC;English (LC)
+en-LR;en;eng;LR;English (LR)
+en-LS;en;eng;LS;English (LS)
+en-MG;en;eng;MG;English (MG)
+en-MH;en;eng;MH;English (MH)
+en-MO;en;eng;MO;English (MO)
+en-MP;en;eng;MP;English (MP)
+en-MS;en;eng;MS;English (MS)
+en-MT;en;eng;MT;English (MT)
+en-MU;en;eng;MU;English (MU)
+en-MW;en;eng;MW;English (MW)
+en-MY;en;eng;MY;English (MY)
+en-NA;en;eng;NA;English (NA)
+en-NF;en;eng;NF;English (NF)
+en-NG;en;eng;NG;English (NG)
+en-NL;en;eng;NL;English (NL)
+en-NR;en;eng;NR;English (NR)
+en-NU;en;eng;NU;English (NU)
+en-NZ;en;eng;NZ;English (NZ)
+en-PG;en;eng;PG;English (PG)
+en-PH;en;eng;PH;English (PH)
+en-PK;en;eng;PK;English (PK)
+en-PN;en;eng;PN;English (PN)
+en-PR;en;eng;PR;English (PR)
+en-PW;en;eng;PW;English (PW)
+en-RW;en;eng;RW;English (RW)
+en-SB;en;eng;SB;English (SB)
+en-SC;en;eng;SC;English (SC)
+en-SD;en;eng;SD;English (SD)
+en-SE;en;eng;SE;English (SE)
+en-SG;en;eng;SG;English (SG)
+en-SH;en;eng;SH;English (SH)
+en-SI;en;eng;SI;English (SI)
+en-SL;en;eng;SL;English (SL)
+en-SO;en;eng;SO;English (SO)
+en-SS;en;eng;SS;English (SS)
+en-SX;en;eng;SX;English (SX)
+en-SZ;en;eng;SZ;English (SZ)
+en-TC;en;eng;TC;English (TC)
+en-TK;en;eng;TK;English (TK)
+en-TO;en;eng;TO;English (TO)
+en-TT;en;eng;TT;English (TT)
+en-TV;en;eng;TV;English (TV)
+en-TZ;en;eng;TZ;English (TZ)
+en-UG;en;eng;UG;English (UG)
+en-UM;en;eng;UM;English (UM)
+en-US;en;eng;US;English (US)
+en-VC;en;eng;VC;English (VC)
+en-VG;en;eng;VG;English (VG)
+en-VI;en;eng;VI;English (VI)
+en-VU;en;eng;VU;English (VU)
+en-WS;en;eng;WS;English (WS)
+en-ZA;en;eng;ZA;English (ZA)
+en-ZM;en;eng;ZM;English (ZM)
+en-ZW;en;eng;ZW;English (ZW)
+eo;eo;epo;;Esperanto
+es;es;spa;;Spanish\Castilian
+es-AR;es;spa;AR;Spanish\Castilian (AR)
+es-BO;es;spa;BO;Spanish\Castilian (BO)
+es-BR;es;spa;BR;Spanish\Castilian (BR)
+es-BZ;es;spa;BZ;Spanish\Castilian (BZ)
+es-CL;es;spa;CL;Spanish\Castilian (CL)
+es-CO;es;spa;CO;Spanish\Castilian (CO)
+es-CR;es;spa;CR;Spanish\Castilian (CR)
+es-CU;es;spa;CU;Spanish\Castilian (CU)
+es-DO;es;spa;DO;Spanish\Castilian (DO)
+es-EA;es;spa;EA;Spanish\Castilian (EA)
+es-EC;es;spa;EC;Spanish\Castilian (EC)
+es-ES;es;spa;ES;Spanish\Castilian (ES)
+es-GQ;es;spa;GQ;Spanish\Castilian (GQ)
+es-GT;es;spa;GT;Spanish\Castilian (GT)
+es-HN;es;spa;HN;Spanish\Castilian (HN)
+es-IC;es;spa;IC;Spanish\Castilian (IC)
+es-MX;es;spa;MX;Spanish\Castilian (MX)
+es-NI;es;spa;NI;Spanish\Castilian (NI)
+es-PA;es;spa;PA;Spanish\Castilian (PA)
+es-PE;es;spa;PE;Spanish\Castilian (PE)
+es-PH;es;spa;PH;Spanish\Castilian (PH)
+es-PR;es;spa;PR;Spanish\Castilian (PR)
+es-PY;es;spa;PY;Spanish\Castilian (PY)
+es-SV;es;spa;SV;Spanish\Castilian (SV)
+es-US;es;spa;US;Spanish\Castilian (US)
+es-UY;es;spa;UY;Spanish\Castilian (UY)
+es-VE;es;spa;VE;Spanish\Castilian (VE)
+et;et;est;;Estonian
+et-EE;et;est;EE;Estonian
+eu;eu;baq;;Basque
+eu-ES;eu;baq;ES;Basque
+ewo;;ewo;;Ewondo
+ewo-CM;;ewo;CM;Ewondo
+fa;fa;per;;Persian
+fa-AF;fa;per;AF;Persian (AF)
+fa-IR;fa;per;IR;Persian (IR)
+ff;ff;ful;;Fulah
+ff-BF;ff;ful;BF;Fulah (BF)
+ff-CM;ff;ful;CM;Fulah (CM)
+ff-GH;ff;ful;GH;Fulah (GH)
+ff-GM;ff;ful;GM;Fulah (GM)
+ff-GN;ff;ful;GN;Fulah (GN)
+ff-GW;ff;ful;GW;Fulah (GW)
+ff-LR;ff;ful;LR;Fulah (LR)
+ff-MR;ff;ful;MR;Fulah (MR)
+ff-NE;ff;ful;NE;Fulah (NE)
+ff-NG;ff;ful;NG;Fulah (NG)
+ff-SL;ff;ful;SL;Fulah (SL)
+ff-SN;ff;ful;SN;Fulah (SN)
+fi;fi;fin;;Finnish
+fi-FI;fi;fin;FI;Finnish
+fi-SE;fi;fin;SE;Finnish (SE)
+fia;;fia;;Nobiin
+fil;;fil;;Filipino, Pilipino
+fil-PH;;fil;PH;Filipino, Pilipino
+fj;fj;;;Bafanji
+fo;fo;fao;;Faroese
+fo-DK;fo;fao;DK;Faroese (DK)
+fo-FO;fo;fao;FO;Faroese
+fr;fr;fre;;French
+fr-BE;fr;fre;BE;French (BE)
+fr-BF;fr;fre;BF;French (BF)
+fr-BI;fr;fre;BI;French (BI)
+fr-BJ;fr;fre;BJ;French (BJ)
+fr-BL;fr;fre;BL;French (BL)
+fr-CA;fr;fre;CA;French (CA)
+fr-CD;fr;fre;CD;French (CD)
+fr-CF;fr;fre;CF;French (CF)
+fr-CG;fr;fre;CG;French (CG)
+fr-CH;fr;fre;CH;French (CH)
+fr-CI;fr;fre;CI;French (CI)
+fr-CM;fr;fre;CM;French (CM)
+fr-DJ;fr;fre;DJ;French (DJ)
+fr-DZ;fr;fre;DZ;French (DZ)
+fr-FR;fr;fre;FR;French (FR)
+fr-GA;fr;fre;GA;French (GA)
+fr-GF;fr;fre;GF;French (GF)
+fr-GN;fr;fre;GN;French (GN)
+fr-GP;fr;fre;GP;French (GP)
+fr-GQ;fr;fre;GQ;French (GQ)
+fr-HT;fr;fre;HT;French (HT)
+fr-IT;fr;fre;IT;French (IT)
+fr-KM;fr;fre;KM;French (KM)
+fr-LB;fr;fre;LB;French (LB)
+fr-LU;fr;fre;LU;French (LU)
+fr-MA;fr;fre;MA;French (MA)
+fr-MC;fr;fre;MC;French (MC)
+fr-MF;fr;fre;MF;French (MF)
+fr-MG;fr;fre;MG;French (MG)
+fr-ML;fr;fre;ML;French (ML)
+fr-MQ;fr;fre;MQ;French (MQ)
+fr-MR;fr;fre;MR;French (MR)
+fr-MU;fr;fre;MU;French (MU)
+fr-NC;fr;fre;NC;French (NC)
+fr-NE;fr;fre;NE;French (NE)
+fr-PF;fr;fre;PF;French (PF)
+fr-PM;fr;fre;PM;French (PM)
+fr-RE;fr;fre;RE;French (RE)
+fr-RW;fr;fre;RW;French (RW)
+fr-SC;fr;fre;SC;French (SC)
+fr-SN;fr;fre;SN;French (SN)
+fr-SY;fr;fre;SY;French (SY)
+fr-TD;fr;fre;TD;French (TD)
+fr-TG;fr;fre;TG;French (TG)
+fr-TN;fr;fre;TN;French (TN)
+fr-VU;fr;fre;VU;French (VU)
+fr-WF;fr;fre;WF;French (WF)
+fr-YT;fr;fre;YT;French (YT)
+frp;;frp;;Arpitan, Francoprovençal
+fuc;;fuc;;Pulaar
+fud;;fud;;East Futuna
+fur;;fur;;Friulian
+fur-IT;;fur;IT;Friulian
+fy;fy;fry;;Western Frisian
+fy-NL;fy;fry;NL;Western Frisian
+ga;ga;gle;;Irish
+ga-GB;ga;gle;GB;Irish (GB)
+ga-IE;ga;gle;IE;Irish
+gag;;gag;;Gagauz
+gd;gd;gla;;Gaelic\Scottish Gaelic
+gd-GB;gd;gla;GB;Gaelic\Scottish Gaelic
+gil;;gil;;Gilbertese
+gl;gl;glg;;Galician
+gl-ES;gl;glg;ES;Galician
+gn;gn;grn;;Guarani
+gsw;;gsw;;Alemannic, Alsatian, Swiss German
+gsw-CH;;gsw;CH;Alemannic, Alsatian, Swiss German
+gsw-FR;;gsw;FR;Alemannic, Alsatian, Swiss German (FR)
+gsw-LI;;gsw;LI;Alemannic, Alsatian, Swiss German (LI)
+gu;gu;guj;;Gujarati
+gu-IN;gu;guj;IN;Gujarati
+guz;;guz;;Ekegusii, Gusii
+guz-KE;;guz;KE;Ekegusii, Gusii
+gv;gv;glv;;Manx
+gv-IM;gv;glv;IM;Manx
+ha;ha;hau;;Hausa
+ha-GH;ha;hau;GH;Hausa (GH)
+ha-NE;ha;hau;NE;Hausa (NE)
+ha-NG;ha;hau;NG;Hausa (NG)
+hak;;hak;;Hakka Chinese
+haw;;haw;;Hawaiian
+haw-US;;haw;US;Hawaiian
+he;he;heb;;Hebrew
+he-IL;he;heb;IL;Hebrew
+hi;hi;hin;;Hindi
+hi-IN;hi;hin;IN;Hindi
+hna;;hna;;Mina (Cameroon)
+hns;;hns;;Caribbean Hindustani
+ho;ho;;;Ahom
+hr;hr;hrv;;Croatian
+hr-BA;hr;hrv;BA;Croatian (BA)
+hr-HR;hr;hrv;HR;Croatian
+hsb;;hsb;;Upper Sorbian
+hsb-DE;;hsb;DE;Upper Sorbian
+ht;ht;hat;;Haitian Creole
+hu;hu;hun;;Hungarian
+hu-HU;hu;hun;HU;Hungarian
+hy;hy;arm;;Armenian
+hy-AM;hy;arm;AM;Armenian
+hz;hz;her;;Herero
+ia;ia;ina;;Interlingua (International Auxiliary Language Association)
+id;id;ind;;Indonesian
+id-ID;id;ind;ID;Indonesian
+ig;ig;ibo;;Igbo
+ig-NG;ig;ibo;NG;Igbo
+ii;ii;iii;;Sichuan Yi\Nuosu
+ii-CN;ii;iii;CN;Sichuan Yi\Nuosu
+inc;;inc;;Indic languages
+inh;;inh;;Ingush
+is;is;ice;;Icelandic
+is-IS;is;ice;IS;Icelandic
+it;it;ita;;Italian
+it-CH;it;ita;CH;Italian (CH)
+it-IT;it;ita;IT;Italian
+it-SM;it;ita;SM;Italian (SM)
+it-VA;it;ita;VA;Italian (VA)
+iu;iu;;;Inuit
+ja;ja;jpn;;Japanese
+ja-JP;ja;jpn;JP;Japanese
+jgo;;jgo;;Ngomba
+jgo-CM;;jgo;CM;Ngomba
+jmc;;jmc;;Machame
+jmc-TZ;;jmc;TZ;Machame
+jv;jv;jav;;Javanese
+jv-ID;jv;jav;ID;Javanese
+ka;ka;geo;;Georgian
+ka-GE;ka;geo;GE;Georgian
+kab;;kab;;Kabyle
+kab-DZ;;kab;DZ;Kabyle
+kam;;kam;;Kamba (Kenya)
+kam-KE;;kam;KE;Kamba (Kenya)
+kbd;;kbd;;Kabardian
+kbp;;kbp;;Kabiyè
+kde;;kde;;Makonde
+kde-TZ;;kde;TZ;Makonde
+kea;;kea;;Kabuverdianu
+kea-CV;;kea;CV;Kabuverdianu
+kg;kg;kon;;Kikongo
+khq;;khq;;Koyra Chiini Songhay
+khq-ML;;khq;ML;Koyra Chiini Songhay
+ki;ki;kik;;Kikuyu\Gikuyu
+ki-KE;ki;kik;KE;Kikuyu\Gikuyu
+kk;kk;kaz;;Kazakh
+kk-KZ;kk;kaz;KZ;Kazakh
+kkj;;kkj;;Kako
+kkj-CM;;kkj;CM;Kako
+kl;kl;kal;;Kalaallisut\Greenlandic
+kl-GL;kl;kal;GL;Kalaallisut\Greenlandic
+kln;;kln;;Kalenjin
+kln-KE;;kln;KE;Kalenjin
+km;km;khm;;Central Khmer
+km-KH;km;khm;KH;Central Khmer
+kn;kn;kan;;Kannada
+kn-IN;kn;kan;IN;Kannada
+ko;ko;kor;;Korean
+ko-KP;ko;kor;KP;Korean
+ko-KR;ko;kor;KR;Korean
+kok;;kok;;Konkani (macrolanguage)
+kok-IN;;kok;IN;Konkani (macrolanguage)
+Kos;;kos;;Kosraean
+kpg;;kpg;;Kapingamarangi
+kr;kr;kau;;Kanuri
+krc;;krc;RU;Karachay-Balkar
+ks;ks;kas;;Kashmiri
+ks-IN;ks;kas;IN;Kashmiri
+ksb;;ksb;;Shambala
+ksb-TZ;;ksb;TZ;Shambala
+ksf;;ksf;;Bafia
+ksf-CM;;ksf;CM;Bafia
+ksh;;ksh;;Colognian
+ksh-DE;;ksh;DE;Colognian
+ku;ku;kur;;Kurdish
+ku-TR;ku;kur;TR;Kurdish
+kun;;kun;;Kunama
+kv;kv;kom;;Komi
+kw;kw;cor;;Cornish
+kw-GB;kw;cor;GB;Cornish
+ky;ky;kir;;Kirghiz\Kyrgyz
+ky-KG;ky;kir;KG;Kirghiz\Kyrgyz
+la;la;lat;;Latin
+lag;;lag;;Langi
+lag-TZ;;lag;TZ;Langi
+lb;lb;ltz;;Luxembourgish\Letzeburgesch
+lb-LU;lb;ltz;LU;Luxembourgish\Letzeburgesch
+lg;lg;lug;;Ganda
+lg-UG;lg;lug;UG;Ganda
+lkt;;lkt;;Lakota
+lkt-US;;lkt;US;Lakota
+ln;ln;lin;;Lingala
+ln-AO;ln;lin;AO;Lingala (AO)
+ln-CD;ln;lin;CD;Lingala (CD)
+ln-CF;ln;lin;CF;Lingala (CF)
+ln-CG;ln;lin;CG;Lingala (CG)
+lo;lo;lao;;Lao
+lo-LA;lo;lao;LA;Lao
+loz;;loz;;Loz
+lrc;;lrc;;Northern Luri
+lrc-IQ;;lrc;IQ;Northern Luri (IQ)
+lrc-IR;;lrc;IR;Northern Luri (IR)
+lt;lt;lit;;Lithuanian
+lt-LT;lt;lit;LT;Lithuanian
+lu;lu;lub;;Luba-Katanga
+lu-CD;lu;lub;CD;Luba-Katanga
+lue;;lue;;Luvale
+lun;;lun;;Lunda
+luo;;luo;;Dholuo, Luo (Kenya and Tanzania)
+luo-KE;;luo;KE;Dholuo, Luo (Kenya and Tanzania)
+lus;;lus;;Lushai
+luy;;luy;;Luyia, Oluluyia
+luy-KE;;luy;KE;Luyia, Oluluyia
+lv;lv;lav;;Latvian
+lv-LV;lv;lav;LV;Latvian
+mai;;mai;;Maithili
+mai-IN;;mai;IN;Maithili
+mas;;mas;;Masai
+mas-KE;;mas;KE;Masai (KE)
+mas-TZ;;mas;TZ;Masai (TZ)
+mdf;;mdf;;Moksha
+men;;men;;Mende
+mer;;mer;;Meru
+mer-KE;;mer;KE;Meru
+meu;;meu;;Motu
+mey;;mey;;Hassaniyya
+mfe;;mfe;;Morisyen
+mfe-MU;;mfe;MU;Morisyen
+mg;;mlg;;Malagasy
+mg-MG;;mlg;MG;Malagasy
+mgh;;mgh;;Makhuwa-Meetto
+mgh-MZ;;mgh;MZ;Makhuwa-Meetto
+mgo;;mgo;;Meta'
+mgo-CM;;mgo;CM;Meta'
+mh;mh;mah;;Ael___ in __aje_
+mi;;mao;;Maori
+mi-NZ;mi;mao;NZ;Maori
+mk;;mac;;Macedonian
+mk-MK;;mac;MK;Macedonian
+ml;;mal;;Malayalam
+ml-IN;ml;mal;IN;Malayalam
+mn;mn;mon;;Mongolian
+mn-MN;mn;mon;MN;Mongolian
+mni;;mni;;Manipuri
+mni-IN;;mni;IN;Manipuri
+mnk;;mnk;;Mandinka
+mns;;;;Mansi
+mr;mr;mar;;Marathi
+mr-IN;mr;mar;IN;Marathi
+ms;ms;may;;Malay
+ms-BN;ms;may;BN;Malay (BN)
+ms-CC;ms;may;CC;Malay (CC)
+ms-ID;ms;may;ID;Malay (ID)
+ms-MY;ms;may;MY;Malay (MY)
+ms-SG;ms;may;SG;Malay (SG)
+mt;mt;mlt;;Maltese
+mt-MT;mt;mlt;MT;Maltese
+mua;;mua;;Mundang
+mua-CM;;mua;CM;Mundang
+mwl;;mwl;;Mirandese
+my;my;bur;;Burmese
+my-MM;my;bur;MM;Burmese
+myv;;myv;;Erzya
+mzn;;mzn;;Mazanderani
+mzn-IR;;mzn;IR;Mazanderani
+na;na;nau;;Nauru
+nan;;nan;;Min Nan Chinese
+naq;;naq;;Khoekhoe, Nama (Namibia)
+naq-NA;;naq;NA;Khoekhoe, Nama (Namibia)
+nb;nb;nob;;Bokmal, Norwegian
+nb-NO;nb;nob;NO;Bokmal, Norwegian
+nb-SJ;nb;nob;SJ;Bokmal, Norwegian
+nd;nd;nde;;Ndebele, North
+nd-ZW;nd;nde;ZW;Ndebele, North
+nds;;nds;;Low German, Low Saxon
+nds-DE;;nds;DE;Low German, Low Saxon
+nds-NL;;nds;NL;Low German, Low Saxon
+ne;ne;nep;;Nepali
+ne-IN;ne;nep;IN;Nepali
+ne-NP;ne;nep;NP;Nepali
+niu;;niu;;Niuean
+nkr;;nkr;;Nukuoro
+nl;nl;dut;;Dutch
+nl-AW;nl;dut;AW;Dutch (AW)
+nl-BE;nl;dut;BE;Dutch (BE)
+nl-BQ;nl;dut;BQ;Dutch (BQ)
+nl-CW;nl;dut;CW;Dutch (CW)
+nl-NL;nl;dut;NL;Dutch (NL)
+nl-SR;nl;dut;SR;Dutch (SR)
+nl-SX;nl;dut;SX;Dutch (SX)
+nmg;;nmg;;Kwasio
+nmg-CM;;nmg;CM;Kwasio
+nn;nn;nno;;Nynorsk, Norwegian
+nn-NO;nn;nno;NO;Nynorsk, Norwegian
+nnh;;nnh;;Ngiemboon
+nnh-CM;;nnh;CM;Ngiemboon
+no;no;nor;;Norwegian
+no-IS;no;nor;IS;Norwegian (IS)
+no-SJ;no;nor;SJ;Norwegian (SJ)
+nog;;nog;;Nogai
+nr;nr;nbl;;South Ndebele
+nso;;nso;;Northern Sotho
+nus;;nus;;Nuer
+nus-SS;;nus;SS;Nuer
+ny;ny;nya;;Nyanja
+nyn;;nyn;;Nyankole
+nyn-UG;;nyn;UG;Nyankole
+oc;oc;oci;;Occitan (post 1500)
+om;om;orm;;Oromo
+om-ET;om;orm;ET;Oromo
+om-KE;;orm;KE;Oromo
+or;or;ori;;Oriya
+or-IN;or;ori;IN;Oriya
+os;os;oss;;Ossetian\Ossetic
+os-GE;os;oss;GE;Ossetian\Ossetic
+os-RU;os;oss;RU;Ossetian\Ossetic
+pa;pa;pan;;Panjabi\Punjabi
+pa-IN;pa;pan;IN;Panjabi\Punjabi
+pa-pk;pa;pan;PK;Panjabi\Punjabi
+pap;;pap;;Papiamento
+pau;;pau;;Palauan
+pcm;;pcm;;Nigerian Pidgin
+pcm-NG;;pcm;NG;Nigerian Pidgin
+pl;pl;pol;;Polish
+pl-PL;pl;pol;PL;Polish
+pon;;pon;;Pohnpeian
+pov;;pov;;Upper Guinea Crioulo
+prg;;prg;;Prussian
+ps;ps;pus;;Pushto\Pashto
+ps-AF;ps;pus;AF;Pushto\Pashto
+ps-PK;ps;pus;PK;Pushto\Pashto
+pt;pt;por;;Portuguese
+pt-AO;pt;por;AO;Portuguese (AO)
+pt-BR;pt;por;BR;Portuguese (BR)
+pt-CH;pt;por;CH;Portuguese (CH)
+pt-CV;pt;por;CV;Portuguese (CV)
+pt-GQ;pt;por;GQ;Portuguese (GQ)
+pt-GW;pt;por;GW;Portuguese (GW)
+pt-LU;pt;por;LU;Portuguese (LU)
+pt-MO;pt;por;MO;Portuguese (MO)
+pt-MZ;pt;por;MZ;Portuguese (MZ)
+pt-PT;pt;por;PT;Portuguese (PT)
+pt-ST;pt;por;ST;Portuguese (ST)
+pt-TL;pt;por;TL;Portuguese (TL)
+qu;qu;que;;Quechua
+qu-BO;qu;que;BO;Quechua (BO)
+qu-EC;qu;que;EC;Quechua (EC)
+qu-PE;qu;que;PE;Quechua (PE)
+rm;rm;roh;;Romansh
+rm-CH;rm;roh;CH;Romansh
+rmm;;rmm;;Roma
+rn;rn;run;;Rundi
+rn-BI;rn;run;BI;Rundi
+ro;ro;rum;;Romanian\Moldavian\Moldovan
+ro-BG;ro;rom;BG;Romanian\Moldavian\Moldovan (BG)
+ro-MD;ro;rum;MD;Romanian\Moldavian\Moldovan
+ro-RO;ro;rum;RO;Romanian\Moldavian\Moldovan
+rof;;rof;;Rombo
+rof-TZ;;rof;TZ;Rombo
+ru;ru;rus;;Russian
+ru-BY;ru;rus;BY;Russian
+ru-KG;ru;rus;KG;Russian
+ru-KZ;ru;rus;KZ;Russian
+ru-MD;ru;rus;MD;Russian
+ru-RU;ru;rus;RU;Russian
+ru-UA;ru;rus;UA;Russian
+rw;rw;kin;;Kinyarwanda
+rw-RW;rw;kin;RW;Kinyarwanda
+rwk;;rwk;;Rwa
+rwk-TZ;;rwk;TZ;Rwa
+sa;sa;san;;Sanskrit
+sah;;sah;;Yakut
+sah-RU;;sah;RU;Yakut
+saq;;saq;;Samburu
+saq-KE;;saq;KE;Samburu
+sat;;sat;;Santali
+sat-IN;;sat;IN;Santali
+sbp;;sbp;;Sangu (Tanzania)
+sbp-TZ;;sbp;TZ;Sangu (Tanzania)
+sc;sc;srd;;Sardinian
+sd;sd;snd;;Sindhi
+sd-IN;sd;snd;IN;Sindhi
+sd-PK;sd;snd;PK;Sindhi
+se;se;sme;;Northern Sami
+se-FI;;sme;FI;Northern Sami (FI)
+se-NO;se;sme;NO;Northern Sami (NO)
+se-SE;se;sme;SE;Northern Sami (SE)
+seh;;seh;;Sena
+seh-MZ;;seh;MZ;Sena
+ses;;ses;;Koyraboro Senni Songhai
+ses-ML;;ses;ML;Koyraboro Senni Songhai
+sg;;sag;;Sango
+sg-CF;;sag;CF;Sango
+shi;;shi;;Tachelhit
+shi-MA;;shi;MA;Tachelhit
+si;si;sin;;Sinhala\Sinhalese
+si-LK;si;sin;LK;Sinhala\Sinhalese
+sid;;sid;;Sidamo
+sit;;sit;;Sino-Tibetan languages
+sk;sk;slo;;Slovak
+sk-SK;sk;slo;SK;Slovak
+sl;sl;slv;;Slovenian
+sl-SI;;slv;SI;Slovenian
+sm;sm;smo;;Samoan
+sma;;sma;;Southern Sami
+smn;;smn;;Inari Sami
+smn-FI;;smn;FI;Inari Sami
+sn;sn;sna;;Shona
+sn-ZW;sn;sna;ZW;Shona
+snk;;snk;;Soninke
+so;so;som;;Somali
+so-DJ;so;som;DJ;Somali (DJ)
+so-ET;so;som;ET;Somali (ET)
+so-KE;so;som;KE;Somali (KE)
+so-SO;so;som;SO;Somali
+sov;;sov;;Sonsorol
+sq;sq;alb;;Albanian
+sq-AL;sq;alb;AL;Albanian
+sq-MK;sq;alb;MK;Albanian (MK)
+sq-XK;sq;alb;XK;Albanian (XK)
+sr;sr;srp;;Serbian
+sr-BA;sr;srp;BA;Serbian (BA)
+sr-ME;sr;srp;ME;Serbian (ME)
+sr-RS;sr;srp;RS;Serbian
+sr-XK;sr;srp;XK;Serbian (XK)
+sre;;sre;;Sara
+srn;;srn;;Sranan Tongo
+ss;ss;ssw;;Swati
+ss-SZ;ss;ssw;SZ;Swati (SZ)
+st;st;sot;;Sotho, Southern
+su;su;sun;;Sundanese
+su-ID;su;sun;ID;Sundanese
+sv;sv;swe;;Swedish
+sv-AX;sv;swe;AX;Swedish (AX)
+sv-FI;sv;swe;FI;Swedish (FI)
+sv-SE;sv;swe;SE;Swedish
+sw;sw;swa;;Swahili
+sw-CD;sw;swa;CD;Swahili (CD)
+sw-KE;sw;swa;KE;Swahili (KE)
+sw-TZ;sw;swa;TZ;Swahili (TZ)
+sw-UG;sw;swa;UG;Swahili (UG)
+swk;;swk;;Malawi Sena
+ta;ta;tam;;Tamil
+ta-IN;ta;tam;IN;Tamil (IN)
+ta-LK;ta;tam;LK;Tamil (LK)
+ta-MY;ta;tam;MY;Tamil (MY)
+ta-SG;ta;tam;SG;Tamil (SG)
+te;te;tel;;Telugu
+te-IN;te;tel;IN;Telugu
+tem;;tem;;Timne
+teo;;teo;;Teso
+teo-KE;;teo;KE;Teso (KE)
+teo-UG;;teo;UG;Teso (UG)
+tet;;tet;;Tetum
+tg;tg;tgk;;Tajik
+tg-TJ;tg;tgk;TJ;Tajik
+th;th;tha;;Thai
+th-TH;th;tha;TH;Thai
+ti;;tir;;Tigrinya
+ti-ER;ti;tir;ER;Tigrinya
+ti-ET;ti;tir;ET;Tigrinya
+tig;;tig;;Tigre
+tk;tk;tuk;;Turkmen
+tk-TM;tk;tuk;TM;Turkmen
+tkl;;tkl;;Tokelau
+tl;tl;tgl;;Tagalog
+tn;tn;tsn;;Tswana
+tn-BW;tn;tsn;BW;Tswana (BW)
+to;to;ton;;Tonga (Tonga Islands)
+to-TO;to;ton;TO;Tonga (Tonga Islands)
+toi;;toi;ZM;Tonga (ZM)
+tox;;tox;;Tobian
+tpi;;tpi;;Tok Pisin
+tr;tr;tur;;Turkish
+tr-BG;tr;tur;BG;Turkish (BG)
+tr-CY;tr;tur;CY;Turkish (CY)
+tr-TR;tr;tur;TR;Turkish
+ts;ts;tso;;Tsonga
+tt;tt;tat;;Tatar
+tt-RU;tt;tat;RU;Tatar
+tum;;tum;;Tumbuka
+tut;;tut;;Altaic languages
+tvl;;tvl;;Tuvalu
+tw;;twi;;Twi
+twq;;twq;;Tasawaq
+twq-NE;;twq;NE;Tasawaq
+ty;ty;tah;;Tahitian
+tyv;;tyv;;Tuvinian
+tzm;;tzm;;Central Atlas Tamazight
+tzm-MA;;tzm;MA;Central Atlas Tamazight
+udm;;udm;;Udmurt
+ug;ug;uig;;Uighur\Uyghur
+ug-CN;ug;uig;CN;Uighur\Uyghur
+uk;uk;ukr;;Ukrainian
+uk-UA;uk;ukr;UA;Ukrainian
+uli;;uli;;Ulithian
+ur;ur;urd;;Urdu
+ur-IN;ur;urd;IN;Urdu
+ur-PK;ur;urd;PK;Urdu
+uz;uz;uzb;;Uzbek
+uz-AF;uz;uzb;AF;Uzbek (AF)
+uz-UZ;uz;uzb;UZ;Uzbek
+vai;;vai;;Vai
+vai-LR;;vai;LR;Vai
+ve;ve;ven;;Venda
+vi;vi;vie;;Vietnamese
+vi-VN;vi;vie;VN;Vietnamese
+vmw;;vmw;;Makhuwa
+vo;vo;vol;;Volapük
+vun;;vun;;Vunjo
+vun-TZ;;vun;TZ;Vunjo
+wae;;wae;;Walser
+wae-CH;;wae;CH;Walser
+wls;;wls;;Wallisian
+wo;wo;wol;;Wolof
+wo-SN;wo;wol;SN;Wolof
+woe;;woe;;Woleaian
+wof;;wof;;Gambian Wolof
+xal;;xal;;Kalmyk
+xh;xh;xho;;Xhosa
+xh-ZA;xh;xho;ZA;Xhosa
+xog;;xog;;Soga
+xog-UG;;xog;UG;Soga
+yao;;yao;;Yao
+yap;;yap;;Yapese
+yav;;yav;;Yangben
+yav-CM;;yav;CM;Yangben
+yi;yi;yid;;Yiddish
+yo;yo;yor;;Yoruba
+yo-BJ;yo;yor;BJ;Yoruba (BJ)
+yo-NG;yo;yor;NG;Yoruba (NG)
+yue;;yue;;Yue Chinese
+yue-CN;;yue;CN;Yue Chinese
+yue-HK;;yue;HK;Yue Chinese (HK)
+zgh;;zgh;;Standard Moroccan Tamazight
+zgh-MA;;zgh;MA;Standard Moroccan Tamazight
+zh;zh;chi;;Chinese
+zh-CN;zh;chi;CN;Chinese
+zh-HK;zh;chi;HK;Chinese (HK)
+zh-MO;zh;chi;MO;Chinese (MO)
+zh-SG;zh;chi;SG;Chinese (SG)
+zh-TW;zh;chi;TW;Chinese (TW)
+zu;zu;zul;;Zulu
+zu-ZA;zu;zul;ZA;Zulu

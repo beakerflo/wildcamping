@@ -15,10 +15,26 @@ class CreateCountriesTable extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
-            $table->string('code', 3);
-            $table->string('name', 50);
-            $table->softDeletes();
-            $table->unique('code');
+            $table->string('iso_code_2', 2);
+            $table->string('iso_code_3', 3);
+            $table->string('fips_code', 2);
+            $table->integer('iso_number');
+            $table->string('name');
+            $table->string('name_nl');
+            $table->string('name_fr');
+            $table->string('name_es');
+            $table->string('name_formal')->nullable();
+            $table->string('capital')->nullable();
+            $table->integer('dial_code')->nullable();
+            $table->string('fifa_code')->nullable();
+            $table->string('tld')->nullable();
+            $table->integer('population')->unsigned()->nullable();
+            $table->string('is_independent');
+            $table->foreignId('currency_id')->nullable();
+            $table->foreignId('region_id')->nullable();
+            $table->unique('iso_code_2');
+            $table->unique('iso_code_3');
+            $table->unique('iso_number');
             $table->unique('name');
         });
     }
