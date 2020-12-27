@@ -25,6 +25,8 @@ class CreateAddressesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->unique(['road', 'postcode', 'city']);
+            $table->unique(['road', 'city']);
+            $table->unique(['postcode', 'city']);
         });
     }
 

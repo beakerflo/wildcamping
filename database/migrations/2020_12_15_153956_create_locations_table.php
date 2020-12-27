@@ -20,7 +20,7 @@ class CreateLocationsTable extends Migration
             $table->foreignId('coordinate_id');
             $table->boolean('private')->default(false);
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->timestamps();
             $table->softDeletes();
             $table->unique(['user_id','name']);
