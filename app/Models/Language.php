@@ -17,7 +17,7 @@ class Language extends Model
     }
 
     /**
-     * Get the languages of the country.
+     * Get area where the language is spoken
      */
     public function area() {
         return $this->belongsTo(Country::class, 'area_id');

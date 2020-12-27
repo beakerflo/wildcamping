@@ -34,12 +34,5 @@ class Image extends Model
     public function location() {
         return $this->belongsTo(Location::class);
     }
-
-    /**
-     * Get the location for this image.
-     */
-    public function mapCoordinates() {
-        return $this->hasOne(Coordinate::class, 'image_id');
-    }
     
 }

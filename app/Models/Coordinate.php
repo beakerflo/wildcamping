@@ -28,9 +28,16 @@ class Coordinate extends Model
     }
 
     /**
-     * Get the map of the coordinates
+     * Get the maps of the coordinates
      */
-    public function map() {
-        return $this->belongsTo(Image::class, 'map_id');
+    public function maps() {
+        return $this->hasMany(Map::class);
+    }
+
+    /**
+     * Get the location using these coordinates
+     */
+    public function locations() {
+        return $this->hasMany(Location::class);
     }
 }

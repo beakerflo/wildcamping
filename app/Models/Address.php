@@ -28,10 +28,10 @@ class Address extends Model
     }
 
     /**
-     * Get the locations for this address.
+     * Get the coordinates for this address.
      */
-    public function locations() {
-        return $this->hasMany(Location::class);
+    public function coordinate() {
+        return $this->hasOne(Coordinate::class);
     }
 
 }
