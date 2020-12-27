@@ -1,0 +1,72 @@
+{
+    "place_id":"39155766",
+    "licence":"https:\/\/locationiq.com\/attribution",
+    "osm_type":"node",
+    "osm_id":"2909592671",
+    "lat": "52.719394",
+    "lon":"4.7965452",
+    "display_name":"1, Liefdelaan, Oudkarspel, Langedijk, North Holland, Netherlands, 1724RN, The Netherlands",
+    "address":{
+        "house_number":"1",
+        "road":"Liefdelaan",
+        "suburb":"Oudkarspel",
+        "city":"Langedijk",
+        "state":"North Holland",
+        "postcode":"1724RN",
+        "country":"The Netherlands",
+        "country_code":"nl",
+        "city_district":"Langedijk",
+        "town":"Oudkarspel"
+        },
+    "boundingbox":["52.719294","52.719494","4.7964452","4.7966452"]
+},
+
+{
+    "place_id":"164498470",
+    "licence":"https:\/\/locationiq.com\/attribution",
+    "osm_type":"way",
+    "osm_id":"336040290",
+    "lat":"52.6268046",
+    "lon":"4.75509333553371",
+    "display_name":"Schelphoek, 4, Korte Vondelstraat, Overdie, Alkmaar, North Holland, Netherlands, 1811AE, The Netherlands",
+    "address":{
+        "parking":"Schelphoek",
+        "house_number":"4",
+        "road":"Korte Vondelstraat",
+        "neighbourhood":"Overdie",
+        "suburb":"Alkmaar",
+        "city":"Alkmaar",
+        "state":"North Holland",
+        "postcode":"1811AE",
+        "country":"The Netherlands",
+        "country_code":"nl",
+        "city_district":"Alkmaar",
+        "town":"Alkmaar"
+    },
+    "boundingbox":["52.6261442","52.6273045","4.7536991","4.7563525"]
+},
+
+{
+    "place_id":"29503757",
+    "licence":"https:\/\/locationiq.com\/attribution",
+    "osm_type":"node",
+    "osm_id":"2721824858",
+    "lat":"52.3725062",
+    "lon":"4.8818909",
+    "display_name":"26-H, Laurierstraat, Jordaan, Centrum, Amsterdam, North Holland, Netherlands, 1016PM, The Netherlands",
+    "address":{
+        "house_number":"26-H",
+        "road":"Laurierstraat",
+        "neighbourhood":"Jordaan",
+        "suburb":"Centrum",
+        "city":"Amsterdam",
+        "state":"North Holland",
+        "postcode":"1016PM",
+        "country":"The Netherlands",
+        "country_code":"nl",
+        "city_district":"Amsterdam",
+        "town":"Centrum"
+    },
+    "boundingbox":["52.3724062","52.3726062","4.8817909","4.8819909"]
+}
+

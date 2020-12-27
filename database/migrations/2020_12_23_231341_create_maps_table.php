@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCoordinatesTable extends Migration
+class CreateMapsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateCoordinatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('coordinates', function (Blueprint $table) {
+        Schema::create('maps', function (Blueprint $table) {
             $table->id();
-            $table->string('latitude');
-            $table->string('longitude');
-            $table->foreignId('address_id')->nullable();
+            $table->foreignId('coordinate_id');;
+            $table->smallInteger('zoom');
+            $table->string('filename');
             $table->timestamps();
             $table->softDeletes();
-            $table->unique(['latitude', 'longitude']);
+            $table->unique(['filename']);
+            $table->unique(['coordinate_id', 'zoom']);
         });
     }
 
@@ -31,6 +32,6 @@ class CreateCoordinatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('coordinates');
+        Schema::dropIfExists('maps');
     }
 }

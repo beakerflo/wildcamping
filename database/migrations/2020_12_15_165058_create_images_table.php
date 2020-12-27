@@ -18,7 +18,6 @@ class CreateImagesTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('location_id');
             $table->string('name');
-            $table->string('description');
             $table->string('filename');
             $table->timestamps();
             $table->softDeletes();

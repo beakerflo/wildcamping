@@ -19,8 +19,7 @@ class Location extends Model
         'description',
         'user_id',
         'type_id',
-        'coordinate_id',
-        'address_id',
+        'coordinate_id'
     ];
 
     /**
@@ -42,13 +41,6 @@ class Location extends Model
      */
     public function coordinate() {
         return $this->belongsTo(Coordinate::class);
-    }
-
-    /**
-     * Get the address of the location.
-     */
-    public function address() {
-        return $this->belongsTo(Address::class);
     }
 
     /**

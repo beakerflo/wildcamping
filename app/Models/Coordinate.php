@@ -16,12 +16,21 @@ class Coordinate extends Model
     protected $fillable = [
         'latitude',
         'longitude',
+        'map_id',
+        'address_id'
     ];
 
     /**
      * Get the locations for this coordinate.
      */
-    public function locations() {
-        return $this->hasMany(Location::class);
+    public function address() {
+        return $this->belongsTo(Address::class);
+    }
+
+    /**
+     * Get the map of the coordinates
+     */
+    public function map() {
+        return $this->belongsTo(Image::class, 'map_id');
     }
 }
