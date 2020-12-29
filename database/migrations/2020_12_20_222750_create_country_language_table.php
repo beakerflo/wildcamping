@@ -17,6 +17,7 @@ class CreateCountryLanguageTable extends Migration
             $table->id();
             $table->foreignId('country_id');
             $table->foreignId('language_id');
+            $table->unique(['country_id', 'language_id']);
         });
     }
 

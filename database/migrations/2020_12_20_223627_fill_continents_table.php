@@ -31,6 +31,6 @@ class FillContinentsTable extends Migration
      */
     public function down()
     {
-        
+        DB::table('continents')->truncate();
     }
 }

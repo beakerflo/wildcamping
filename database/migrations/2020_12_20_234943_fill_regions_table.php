@@ -27,7 +27,7 @@ class FillRegionsTable extends Migration
             array('name' => 'Polynesia', 'name_nl' => 'Polynesie', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'OC'])->pluck('id')->first()),
             array('name' => 'South-eastern Asia', 'name_nl' => 'Zuid-Oost Azie', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'AS'])->pluck('id')->first()),
             array('name' => 'Southern Asia', 'name_nl' => 'Zuid Azie', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'AS'])->pluck('id')->first()),
-            array('name' => 'Southern Europe', 'name_nl' => 'Zzuid Europa', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'EU'])->pluck('id')->first()),
+            array('name' => 'Southern Europe', 'name_nl' => 'Zuid Europa', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'EU'])->pluck('id')->first()),
             array('name' => 'Sub-Saharan Africa', 'name_nl' => 'Sub-Sahara', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'AF'])->pluck('id')->first()),
             array('name' => 'Western Asia', 'name_nl' => 'West Azie', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'AS'])->pluck('id')->first()),
             array('name' => 'Western Europe', 'name_nl' => 'West Europa', 'continent_id' => DB::table('continents')->Where(['iso_code' => 'EU'])->pluck('id')->first()),
@@ -43,6 +43,6 @@ class FillRegionsTable extends Migration
      */
     public function down()
     {
-        //
+        DB::table('regions')->truncate();
     }
 }

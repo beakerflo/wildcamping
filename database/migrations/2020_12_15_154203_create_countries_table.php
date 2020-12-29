@@ -17,7 +17,7 @@ class CreateCountriesTable extends Migration
             $table->id();
             $table->string('iso_code_2', 2);
             $table->string('iso_code_3', 3);
-            $table->string('fips_code', 2);
+            $table->string('fips_code', 2)->nullable();
             $table->integer('iso_number');
             $table->string('name');
             $table->string('name_nl');

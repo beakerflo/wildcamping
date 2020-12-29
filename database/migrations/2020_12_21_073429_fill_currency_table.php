@@ -187,6 +187,6 @@ class FillCurrencyTable extends Migration
      */
     public function down()
     {
-        //
+        DB::table('currencies')->truncate();
     }
 }

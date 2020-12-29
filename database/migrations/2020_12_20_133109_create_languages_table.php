@@ -20,6 +20,8 @@ class CreateLanguagesTable extends Migration
             $table->string('iso_code_3')->nullable();
             $table->foreignId('area_id')->nullable();
             $table->string('name');
+            $table->unique(['locale']);
+            $table->unique(['name']);
         });
     }
 

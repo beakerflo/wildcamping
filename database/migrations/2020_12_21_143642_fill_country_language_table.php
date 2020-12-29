@@ -728,6 +728,6 @@ class FillCountryLanguageTable extends Migration
      */
     public function down()
     {
-        //
+        DB::table('country_language')->truncate();
     }
 }
