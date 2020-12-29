@@ -83,6 +83,13 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the favorites of the user.
+     */
+    public function favorites() {
+        return $this->hasMany(Favorite::class);
+    }
+
+    /**
      * Get the tags created by the user.
      */
     public function tags() {

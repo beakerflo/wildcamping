@@ -7,12 +7,22 @@ use Illuminate\View\Component;
 class AppLayout extends Component
 {
     /**
-     * Get the view / contents that represents the component.
+     * Create a new component instance.
      *
-     * @return \Illuminate\View\View
+     * @return void
+     */
+    public function __construct($title = "No Title")
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|string
      */
     public function render()
     {
-        return view('layouts.app');
+        return view('layouts.app')->with('title', $this->title);
     }
 }

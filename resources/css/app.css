@@ -1,3 +1,29 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.pageSubHeader {
+    @apply text-florange font-semibold;
+}
+
+.pageSvgIcons {
+    @apply w-8 h-8 text-florange;
+}
+
+.pageLogoBig {
+    @apply h-48 w-48;
+}
+
+.pageLogoSmall {
+    @apply h-12 w-12;
+}
+
+.pageRowStyle {
+    @apply bg-flowhite w-full my-4 rounded shadow-md;
+}
+
+.authButtons {
+    @apply py-2 px-3 lowercase text-xs font-bold cursor-pointer text-floblack;
+}

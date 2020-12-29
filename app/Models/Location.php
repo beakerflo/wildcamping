@@ -58,6 +58,13 @@ class Location extends Model
     }
 
     /**
+     * Get the favorites of the locations.
+     */
+    public function favorite() {
+        return $this->hasMany(Favorite::class);
+    }
+
+    /**
      * Get the comments on the location.
      */
     public function comments() {
@@ -78,4 +85,16 @@ class Location extends Model
         return $this->belongsToMany(Tag::class);
     }
 
+    /**
+     * Check if the location is a favorite
+     */
+    public function isFavorite() {
+        if ($this->favorite->count() == 0) {
+            return FALSE;
+        } elseif ($this->favorite->count() > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
 }
