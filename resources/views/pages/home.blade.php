@@ -145,11 +145,11 @@
                             <h3 class="text-florange lowercase p-1">{{ __('Coordinates') }}</h3>
                             <div class="flex space-x-4">
                                 <div class="text-xs px-1">lng:</div>
-                                <div>49.73381</div>
+                                <div>49.00000</div>
                             </div>
                             <div class="flex space-x-4">
                                 <div class="text-xs px-1">lng:</div>
-                                <div>5.03199</div>
+                                <div>5.00000</div>
                             </div>
                             <div class="flex space-x-4">
                                 <div class="text-xs px-1 lowercase">{{ __('Map') }}:</div>
