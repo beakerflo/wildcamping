@@ -36,4 +36,11 @@ class Country extends Model
     public function languages() {
         return $this->belongsToMany(Language::class);
     }
+
+    /**
+     * Get the flag of the country.
+     */
+    public function flag() {
+        return $this->belongsTo(Flag::class);
+    }
 }

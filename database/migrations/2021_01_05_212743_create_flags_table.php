@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLocationTeamTable extends Migration
+class CreateFlagsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateLocationTeamTable extends Migration
      */
     public function up()
     {
-        Schema::create('location_team', function (Blueprint $table) {
+        Schema::create('flags', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('location_id');
-            $table->foreignId('team_id');
+            $table->string('iso');
+            $table->mediumText('svg');
             $table->timestamps();
-            $table->unique(['location_id', 'team_id']);
         });
     }
 
@@ -29,6 +28,6 @@ class CreateLocationTeamTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('location_team');
+        Schema::dropIfExists('flags');
     }
 }

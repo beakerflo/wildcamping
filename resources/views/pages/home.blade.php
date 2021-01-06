@@ -28,88 +28,9 @@
         <!-- Begin list content, for lists -->
         <div class="container my-8 mx-auto mt-16 flex">
             <div class="w-2/3 mr-6">
-                <div class="flex justify-between mb-4 items-center">
-                    <div class="flex items-center">
-                        <svg class="Svg5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                        <input type="text" class="SearchBar placeholder-floblue shadow w-60" placeholder="{{ __('Type to search') }}">
-                    </div>
-                    <button class="text-florange hover:text-floblue lowercase px-2 py-1 rounded-md shadow flex space-x-1">
-                        <svg class="Svg5 hover:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div>{{ __('New') }}</div>
-                    </button>
-                </div>
-                <div class="rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start">
-                    <div class="TableHeader">
-                        <div class="w-3/12 flex space-x-3 items-start">
-                            <div class="w-5"> </div>
-                            <div>
-                                {{ __('Type') }}
-                            </div>
-                        </div>
-                        <div class="w-2/12">
-                            {{ __('Source') }}
-                        </div>
-                        <div class="w-5/12">
-                            {{ __('Name') }}
-                        </div>
-                            <div class="w-1/12 text-right"></div>
-                            <div class="w-1/12 text-right"></div>
-                        </div>
-                    </div>
-                <div class="border PrimaryBorderColor rounded-md rounded-t-none divide-y divide-gray-300">
-                    <div class="TableRow hover:bg-gray-200">
-                        <div class="w-3/12 flex space-x-3 items-center">
-                            <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-                            <div>Wildkamperen</div>
-                        </div>
-                        <div class="w-2/12">
-                            Zelf
-                        </div>
-                        <div class="w-5/12">
-                            Het vieze meertje
-                        </div>
-                        <div class="w-1/12 flex items-center">
-                            <svg class="Svg4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg>
-                        </div>
-                        <div class="w-1/12 space-x-2 items-center">
-                            <button class="hover:text-florange">
-                                <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
-                            </button>
-                            <button class="text-red-600 hover:text-floblue-light font-bold">
-                                <svg class="Svg4" fill="red" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="TableRow hover:bg-gray-200">
-                        <div class="w-3/12 flex space-x-3 items-center">
-                            <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                            <div>Camping</div>
-                        </div>
-                        <div class="w-2/12">
-                            Offroadboyz
-                        </div>
-                        <div class="w-5/12">
-                            Halliru
-                        </div>
-                        <div class="w-1/12 flex items-center">
-                            <svg class="Svg4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 390">
-                                <rect fill="#ED2939" width="450" height="390"/>
-                                <rect fill="#FAE042" width="300" height="390"/>
-                                <rect width="150" height="390"/>
-                                </svg>
-                        </div>
-                        <div class="w-1/12 space-x-2 items-center">
-                            <button class="hover:text-florange">
-                                <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
-                            </button>
-                            <button class="hover:text-red-600 text-floblue-light font-bold">
-                                <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <livewire:locations-table>
             </div>
-            <div class="w-1/3 border PrimaryBorderColor rounded-md shadow-md p-2">
+            <div class="w-1/3 border PrimaryBorderColor rounded-md shadow-md max-h-screen p-2">
                 <div class="flex justify-end mb-4 items-center space-x-2">
                     <button class="py-1 hover:text-florange">
                         <svg class="Svg5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
@@ -196,7 +117,7 @@
                             <div class="w-1/5 text-xs">10 nov 2020</div>
                             <div class="w-4/5 truncate text-xs">Nu heeft Petra een weg gevonden waar we geen problemen hebben met de rit er naar toe.</div>
                         </div>
-                        <div class="flex p-1 hover:bg-gray-200"> 
+                        <div class="flex p-1 hover:bg-gray-200">
                             <div class="w-1/5 text-xs">10 aug 2018</div>
                             <div class="w-4/5 truncate text-xs">Nu heeft Petra een weg gevonden waar we geen problemen hebben met de rit er naar toe.</div>
                         </div>
