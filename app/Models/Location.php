@@ -100,6 +100,17 @@ class Location extends Model
     }
 
     /**
+     * Check if the location is private
+     */
+    public function isPrivate() {
+        if ($this->private == 1) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    /**
      * Check if address exists or change flag for question mark
      *
      */

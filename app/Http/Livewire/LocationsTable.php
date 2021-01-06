@@ -15,11 +15,22 @@ class LocationsTable extends Component
     public $search = '';
     public $type = '';
     public $source ='';
+    public $location = '';
 
-    public function render()
-    {
+    public function getLocationDetails($LocationId) {
+        $this->location = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($LocationId);
+    }
+
+    public function render() {
+        $Locations = Location::search($this->search)
+                        ->OfType($this->type)
+                        ->FromSource($this->source)
+                        ->with('type','favorite','sources','coordinate.address.country.flag');
+
         return view('livewire.locations-table',[
-            'Locations' => Location::search($this->search)->OfType($this->type)->FromSource($this->source)->with('type','favorite','sources','coordinate.address.country.flag')->Paginate(24),
+            'LocationDetails' => $this->location,
+            'RecordsCount' => number_format($Locations->count(),0,",","."),
+            'Locations' => $Locations->simplePaginate(24),
             'Sources' => Source::orderBy('name', 'asc')->get(),
             'Types' => Type::orderBy('name', 'asc')->get(),
         ]);
