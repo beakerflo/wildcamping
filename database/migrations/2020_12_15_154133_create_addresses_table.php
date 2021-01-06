@@ -24,9 +24,7 @@ class CreateAddressesTable extends Migration
             $table->foreignId('country_id');
             $table->timestamps();
             $table->softDeletes();
-            $table->unique(['road', 'postcode', 'city']);
-            $table->unique(['road', 'city']);
-            $table->unique(['postcode', 'city']);
+            $table->unique(['description']);
         });
     }
 
