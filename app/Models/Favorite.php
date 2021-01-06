@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Favorite extends Model
-{
+class Favorite extends Model {
+
     /**
      * Fillable fields of this model
      *
@@ -24,9 +24,9 @@ class Favorite extends Model
     }
 
     /**
-     * Get the location that was favorited by the user.
+     * Get the location that is favorited.
      */
     public function location() {
-        return $this->belongsTo(location::class);
+        return $this->belongsTo(Location::class);
     }
 }

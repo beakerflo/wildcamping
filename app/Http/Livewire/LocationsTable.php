@@ -17,8 +17,8 @@ class LocationsTable extends Component
     public $source ='';
     public $location = '';
 
-    public function getLocationDetails($LocationId) {
-        $this->location = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($LocationId);
+    public function getLocationDetails($id) {
+        $this->location = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
     }
 
     public function render() {
@@ -28,9 +28,9 @@ class LocationsTable extends Component
                         ->with('type','favorite','sources','coordinate.address.country.flag');
 
         return view('livewire.locations-table',[
-            'LocationDetails' => $this->location,
+            'RecordDetails' => $this->location,
             'RecordsCount' => number_format($Locations->count(),0,",","."),
-            'Locations' => $Locations->simplePaginate(24),
+            'Records' => $Locations->simplePaginate(24),
             'Sources' => Source::orderBy('name', 'asc')->get(),
             'Types' => Type::orderBy('name', 'asc')->get(),
         ]);

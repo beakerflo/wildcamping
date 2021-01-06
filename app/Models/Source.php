@@ -34,4 +34,28 @@ class Source extends Model
         return $this->belongsToMany(Location::class);
     }
 
+    /**
+     * Get the location count registered by this source.
+     */
+    public function locationCount() {
+        return number_format($this->locations->count(),0,",",".");
+    }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $search) {
+        if(empty($search)) {
+            return $query;
+        } else {
+            return $query
+                ->where('name', 'like', '%' . $search . '%')
+                ->Orwhere('link', 'like', '%' . $search . '%')
+                ->Orwhere('description', 'like', '%' . $search . '%');
+        }
+    }
 }

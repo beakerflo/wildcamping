@@ -58,38 +58,28 @@
 
         <div class="border PrimaryBorderColor rounded-md rounded-t-none divide-y divide-gray-300">
             @foreach($Records as $Record)
-                <div wire:click.prevent="getLocationDetails({{ $Record->id }})" class="TableRow hover:bg-gray-200 space-x-1">
+                <div wire:click.prevent="getLocationDetails({{ $Record->Location->id }})" class="TableRow hover:bg-gray-200 space-x-1">
                     <div class="w-2/12 flex space-x-3 items-center truncate">
-                        @if($Record->isPrivate())
+                        @if($Record->Location->isPrivate())
                             <svg class="Svg4 text-florange-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
                         @else
                             <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                         @endif
-                        <div>{{ $Record->type->name }}</div>
+                        <div>{{ $Record->Location->type->name }}</div>
                     </div>
 
                     <div class="w-3/12 truncate">
-                        @foreach ($Record->sources as $Source)
+                        @foreach ($Record->Location->sources as $Source)
                             <div>{{ $Source->name }}</div>
                         @endforeach
                     </div>
 
                     <div class="w-6/12 flex space-x-1 truncate">
-                        {{ $Record->name }}
+                        {{ $Record->Location->name }}
                     </div>
 
                     <div class="w-1/12 flex items-center truncate space-x-3">
-                        {!! $Record->getFlagSvg(5) !!}
-
-                        @if($Record->isFavorite())
-                            <button class="text-red-600 font-bold">
-                                <svg class="Svg5" fill="red" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                            </button>
-                        @else
-                            <button class="text-floblue-light font-bold">
-                                <svg class="Svg5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                            </button>
-                        @endif
+                        {!! $Record->Location->getFlagSvg(5) !!}
                     </div>
                 </div>
             @endforeach

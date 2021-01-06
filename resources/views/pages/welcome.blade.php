@@ -1,4 +1,4 @@
-<x-app-layout title="{{ __($title) }}">
+<x-app-layout title="{{ __('Welcome to this page') }}" breadcrumb="pages,welcome">
     <div class="container my-8 mx-auto mt-16 flex">
         <div class="w-2/3 mr-6 px-4 py-4 space-y-6">
             <div>
@@ -42,19 +42,19 @@
         <div class="w-1/3 border border-gray-300 rounded-md shadow-md px-4 py-4 space-y-2">
             <h2 class="TextHeader">{{ __('On this site')}}</h2>
             <ul class="ml-4 text-base font-semibold space-y-1 lowercase">
-                <li><a href="#" class="hover:text-florange">Home</a> - 
+                <li><a href="#" class="hover:text-florange">Home</a> -
                     <span class="ml-1 SubText">{{ __('This page') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('Data') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('Data') }}</a> -
                     <span class="ml-1 SubText">{{ __('Data currently available') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('Documentation') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('Documentation') }}</a> -
                     <span class="ml-1 SubText">{{ __('More information') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('API') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('API') }}</a> -
                     <span class="ml-1 SubText">{{ __('A programmable interface') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('Services') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('Services') }}</a> -
                     <span class="ml-1 SubText">{{ __('The services we use') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('About') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('About') }}</a> -
                     <span class="ml-1 SubText">{{ __('Behind the scenes, the team') }}</span></li>
-                <li><a href="#" class="hover:text-florange">{{ __('Contact') }}</a> - 
+                <li><a href="#" class="hover:text-florange">{{ __('Contact') }}</a> -
                     <span class="ml-1 SubText">{{ __('Contact us for anything') }}</span></li>
             </ul>
         </div>
