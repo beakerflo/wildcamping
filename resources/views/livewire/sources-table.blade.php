@@ -3,7 +3,7 @@
         <div class="flex justify-between mb-4 items-center">
             <div class="flex items-center space-x-2">
                 <div class="flex items-center">
-                    <input wire:model.debounce.300ms="search" type="text" class="SearchBar placeholder-floblue shadow w-38" placeholder="{{ __('Type to search') }}">
+                    <x-table-search class="w-36 h-8 text-xs" />
                 </div>
             </div>
             <div class="flex space-x-1"">
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="w-6/12" wire:click.prevent="getRecordDetails({{ $Record->id }})">
-                        {{ $Record->Description }}
+                        {{ $Record->description }}
                     </div>
 
                     <div class="w-1/12">
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="w-1/12">
-                        <a href="{{ $Record->link }}" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></a>
+                        <a href="{{ $Record->link }}" target="_blank"><svg class="Svg5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></a>
                     </div>
                 </div>
             @endforeach

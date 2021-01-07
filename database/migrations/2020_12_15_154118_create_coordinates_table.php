@@ -17,6 +17,7 @@ class CreateCoordinatesTable extends Migration
             $table->id();
             $table->string('latitude');
             $table->string('longitude');
+            $table->string('what3words')->nullable();
             $table->foreignId('address_id')->nullable();
             $table->timestamps();
             $table->softDeletes();

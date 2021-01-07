@@ -9,7 +9,7 @@
 }
 
 .SearchBar {
-    @apply rounded border border-florange-dark bg-flowhite text-floblue-dark py-1 px-2 h-8;
+    @apply rounded border border-florange-dark bg-flowhite text-floblue-dark py-1 px-2;
 }
 
 .ButtonLeft {
