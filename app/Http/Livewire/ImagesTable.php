@@ -11,18 +11,18 @@ class ImagesTable extends Component
     use WithPagination;
 
     public $search = '';
-    public $image = '';
-    public $paginate = 24;
+    public $record = '';
+    public $paginate = 12;
 
-    public function getLocationDetails($id) {
-        $this->location = Image::with('location','location.images','location.coordinate.address.country.flag')->find($id);
+    public function getRecordDetails($id) {
+        $this->record = Image::with('location','location.images','location.coordinate.address.country.flag')->find($id);
     }
 
     public function render() {
-        $Images = Image::with('location','location.images','location.coordinate.address.country.flag');
+        $Images = Image::search($this->search)->with('location','location.images','location.coordinate.address.country.flag');
 
         return view('livewire.images-table', [
-            'RecordDetails' => $this->image,
+            'RecordDetails' => $this->record,
             'RecordsCount' => number_format($Images->count(),0,",","."),
             'Records' => $Images->simplePaginate($this->paginate),
         ]);

@@ -11,17 +11,17 @@ class VisitsTable extends Component
     use WithPagination;
 
     public $search = '';
-    public $visit = '';
+    public $record = '';
     public $paginate = 24;
 
-    public function getLocationDetails($id) {
-        $this->visit = Visit::with('locations', 'location.type','location.sources','location.coordinate.address.country.flag')->find($id);
+    public function getRecordDetails($id) {
+        $this->record = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag')->find($id);
     }
 
     public function render() {
-        $Visits = Visit::with('locations', 'location.type','location.sources','location.coordinate.address.country.flag');
+        $Visits = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
         return view('livewire.visits-table', [
-            'RecordDetails' => $this->visit,
+            'RecordDetails' => $this->record,
             'RecordsCount' => number_format($Visits->count(),0,",","."),
             'Records' => $Visits->simplePaginate($this->paginate),
         ]);

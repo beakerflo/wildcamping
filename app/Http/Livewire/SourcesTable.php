@@ -11,18 +11,18 @@ class SourcesTable extends Component
     use WithPagination;
 
     public $search = '';
-    public $source = '';
+    public $record = '';
     public $paginate = 24;
 
-    public function getLocationDetails($id) {
-        $this->source = Source::with('locations')->find($id);
+    public function getRecordDetails($id) {
+        $this->record = Source::with('locations')->find($id);
     }
 
     public function render() {
         $Sources = Source::Search($this->search)->with('locations');
 
         return view('livewire.sources-table', [
-            'RecordDetails' => $this->source,
+            'RecordDetails' => $this->record,
             'RecordsCount' => number_format($Sources->count(),0,",","."),
             'Records' => $Sources->simplePaginate($this->paginate),
         ]);    }

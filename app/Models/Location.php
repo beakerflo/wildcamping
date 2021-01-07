@@ -111,6 +111,20 @@ class Location extends Model
     }
 
     /**
+     * Get the visit count on this location.
+     */
+    public function visitCount() {
+        return number_format($this->Visits->count(),0,",",".");
+    }
+
+    /**
+     * Get the visit count on this location.
+     */
+    public function imageCount() {
+        return number_format($this->Images->count(),0,",",".");
+    }
+
+    /**
      * Check if address exists or change flag for question mark
      *
      */

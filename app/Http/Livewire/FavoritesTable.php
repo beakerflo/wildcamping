@@ -14,18 +14,18 @@ class FavoritesTable extends Component
     use WithPagination;
 
     public $search = '';
-    public $favorite = '';
+    public $record = '';
     public $paginate = 24;
 
-    public function getLocationDetails($id) {
-        $this->favorite = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
+    public function getRecordDetails($id) {
+        $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
     }
 
     public function render() {
         $Favorites = Favorite::with('location','location.type','location.sources','location.coordinate.address.country.flag');
 
         return view('livewire.favorites-table', [
-            'RecordDetails' => $this->favorite,
+            'RecordDetails' => $this->record,
             'RecordsCount' => number_format($Favorites->count(),0,",","."),
             'Records' => $Favorites->simplePaginate($this->paginate),
             'Sources' => Source::orderBy('name', 'asc')->get(),

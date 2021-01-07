@@ -28,7 +28,7 @@ class Visit extends Model
     protected $casts = [
         'visited_at' => 'date',
     ];
-    
+
     /**
      * Get the user that made the visit
      */
