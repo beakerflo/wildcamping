@@ -23,20 +23,38 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/home', function () {
-    return view('pages.welcome')->with('title', 'Cursus pagina');
+    return view('pages.welcome');
 })->name('home');
 
 
 Route::name('pages.')->group(function () {
-    Route::get('/', function () {
+    Route::get('/pages/welcome', function () {
         return view('pages.welcome');
     })->name('welcome');
-    Route::get('/data', function () {
+    Route::get('/', function () {
         return view('pages.welcome');
-    })->name('data');
-    Route::get('/phome', function () {
-        return view('pages.welcome')->with('title', 'Cursus pagina');
     })->name('home');
+    Route::get('/data', function () {
+        return view('pages.data');
+    })->name('data');
+    Route::get('/documentation', function () {
+        return view('pages.documentation');
+    })->name('documentation');
+    Route::get('/apidocs', function () {
+        return view('pages.api');
+    })->name('apidocs');
+    Route::get('/about', function () {
+        return view('pages.about');
+    })->name('about');
+    Route::get('/contact', function () {
+        return view('pages.contact');
+    })->name('contact');
+    Route::get('/security', function () {
+        return view('pages.security');
+    })->name('security');
+    Route::get('/privacy', function () {
+        return view('pages.privacy');
+    })->name('privacy');
 });
 
 Route::name('data.')->group(function () {

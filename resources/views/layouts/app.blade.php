@@ -24,21 +24,12 @@
         <!-- Begin orange bar, navigator -->
         <nav class="WhiteOnOrange px-4 py-3 flex items-center justify-between">
             <div class="flex space-x-4 items-center">
-                <div class="bg-flowhite rounded-full mr-4">
-                    <a href="#"><img src="/img/logo.png" class="h-14 w-auto"></a>
-                </div>
+                <x-logo class="mr-4" />
                 <div class="flex items-center">
                     <svg class="Svg5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     <input type="text" class="SearchBar placeholder-floblue w-72" placeholder="{{ __('Type to search') }}">
                 </div>
-                <ul class="flex items-center space-x-4">
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">Home</a></li>
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">{{ __('Data') }}</a></li>
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">{{ __('Documentation') }}</a></li>
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">{{ __('API') }}</a></li>
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">{{ __('About') }}</a></li>
-                    <li class="TopMenuItem hover:text-gray-300"><a href="#">{{ __('Contact') }}</a></li>
-                </ul>
+                <x-top-menu />
             </div>
             <div class="flex space-x-4 items-center">
                 <div class="relative">
@@ -69,19 +60,7 @@
 
         <!-- Start footer content, end of page -->
         <footer class="container mx-auto border-t border-florange mt-20 py-10 flex items-center justify-evenly">
-            <ul class="flex items-center space-x-12 justify-evenly">
-                <li class="text-floblue text-xs">&copy; 2020 <span class="text-floblack">Enter</span><span class="text-blue-700 italic">MI</span></li>
-                <li><a href="#" class="FooterText hover:underline">{{ __('Privacy') }}</a></li>
-                <li><a href="#" class="FooterText hover:underline">{{ __('Security') }}</a></li>
-            </ul>
-            <div class="bg-flowhite border border-florange rounded-full">
-                <a href="#"><img src="./img/logo.png" class="h-14 w-14"></a>
-            </div>
-            <ul class="flex items-center space-x-12 justify-evenly">
-                <li><a href="#" class="FooterText hover:underline">{{ __('Contact') }}</a></li>
-                <li><a href="#" class="FooterText hover:underline">{{ __('API') }}</a></li>
-                <li><a href="#" class="FooterText hover:underline">{{ __('About') }}</a></li>
-            </ul>
+            <x-footer-menu />
         </footer>
         <!-- End footer content, end of page -->
         @stack('modals')

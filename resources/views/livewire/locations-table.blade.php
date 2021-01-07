@@ -212,9 +212,9 @@
                     <h3 class="SubTextHeader py-1">{{ __('Visits')}}:</h3>
                     @if($RecordDetails->visits->count() > 0)
                         @foreach($RecordDetails->visits as $visit)
-                        <div class="flex p-1 text-xs hover:bg-gray-200">
+                        <div class="flex p-1 text-xs hover:bg-gray-200 space-x-1">
                             <div class="w-1/5 ">{{ $visit->visited_at->diffForHumans() }}</div>
-                            <div class="w-4/5 truncate">$visit->story</div>
+                            <div class="w-4/5 truncate">{{ $visit->story }}</div>
                         </div>
                         @endforeach
                     @else
