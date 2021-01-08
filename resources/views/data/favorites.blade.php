@@ -1,6 +1,6 @@
-<x-app-layout title="{{ __('All our favorite locations') }}" breadcrumb="data table,favorites">
+<x-app-layout title="{{ __('All our favorite locations') }}">
 
-    <x-main-menu active='data.favorites' />
+    <x-data-menu />
 
     <livewire:favorites-table>
 

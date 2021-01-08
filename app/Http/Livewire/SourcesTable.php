@@ -23,7 +23,7 @@ class SourcesTable extends Component
 
         return view('livewire.sources-table', [
             'RecordDetails' => $this->record,
-            'RecordsCount' => number_format($Sources->count(),0,",","."),
+            'Count' => number_format($Sources->count(),0,",","."),
             'Records' => $Sources->simplePaginate($this->paginate),
         ]);    }
 }

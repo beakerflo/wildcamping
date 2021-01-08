@@ -4,12 +4,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.TopMenuItem {
-    @apply lowercase font-semibold;
-}
-
-.SearchBar {
-    @apply rounded border border-florange-dark bg-flowhite text-floblue-dark py-1 px-2;
+.Breadcrumb {
+    @apply lowercase text-florange font-semibold text-lg;
 }
 
 .ButtonLeft {
@@ -20,12 +16,32 @@
     @apply border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-1 text-xs;
 }
 
-.TitleBarItem {
-    @apply font-semibold lowercase flex items-center border-b-2 border-transparent transition ease-in duration-150 pr-4 pb-3;
+.PrimaryBorderColor {
+    @apply border-gray-300;
 }
 
-.TitleBarItemActive {
-    @apply border-florange;
+.Header {
+    @apply text-florange font-bold mb-1;
+}
+
+.HoverOnWhiteBgColor {
+    @apply bg-gray-200;
+}
+
+.LocationTag {
+    @apply px-2 py-1 lowercase text-xs;
+}
+
+.SearchBar {
+    @apply rounded border border-florange-dark bg-flowhite text-floblue-dark py-1 px-2;
+}
+
+.SubTextHeader {
+    @apply text-florange lowercase;
+}
+
+.SubText {
+    @apply text-sm font-normal lowercase;
 }
 
 .Svg4 {
@@ -44,46 +60,18 @@
     @apply w-8 h-8;
 }
 
-.WhiteOnOrange {
-    @apply text-flowhite bg-florange;
-}
-
-.PrimaryBorderColor {
-    @apply border-gray-300;
-}
-
-.HoverOnWhiteBgColor {
-    @apply bg-gray-200;
-}
-
 .TableRow {
     @apply flex justify-between lowercase px-4 py-2;
-}
-
-.TableHeader {
-    @apply flex justify-between lowercase truncate px-4 py-2 text-flowhite bg-florange;
-}
-
-.LocationTag {
-    @apply px-2 py-1 lowercase text-xs;
-}
-
-.Breadcrumb {
-    @apply lowercase text-florange font-semibold text-lg;
-}
-
-.FooterText {
-    @apply text-florange-light lowercase text-xs;
 }
 
 .TextHeader {
     @apply text-lg font-semibold text-florange;
 }
 
-.SubTextHeader {
-    @apply text-florange lowercase;
+.TopMenuItem {
+    @apply lowercase font-semibold;
 }
 
-.SubText {
-    @apply text-sm font-normal lowercase;
+.WhiteOnOrange {
+    @apply text-flowhite bg-florange;
 }

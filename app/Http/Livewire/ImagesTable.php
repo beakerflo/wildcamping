@@ -23,7 +23,7 @@ class ImagesTable extends Component
 
         return view('livewire.images-table', [
             'RecordDetails' => $this->record,
-            'RecordsCount' => number_format($Images->count(),0,",","."),
+            'Count' => number_format($Images->count(),0,",","."),
             'Records' => $Images->simplePaginate($this->paginate),
         ]);
     }

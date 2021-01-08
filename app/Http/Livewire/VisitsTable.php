@@ -19,10 +19,12 @@ class VisitsTable extends Component
     }
 
     public function render() {
-        $Visits = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
+        $Visits = Visit::search($this->search)
+                    ->with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
+
         return view('livewire.visits-table', [
             'RecordDetails' => $this->record,
-            'RecordsCount' => number_format($Visits->count(),0,",","."),
+            'Count' => number_format($Visits->count(),0,",","."),
             'Records' => $Visits->simplePaginate($this->paginate),
         ]);
     }

@@ -159,6 +159,18 @@ class Location extends Model
     }
 
     /**
+     * Scope a query to only include records that are favorited.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeFavorites($query) {
+        return $query
+            ->whereIn('id', Favorite::all()->pluck('location_id')->toArray());
+    }
+
+    /**
      * Scope a query from a specific source
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query

@@ -1,6 +1,6 @@
-<x-app-layout title="{{ __('Images of locations') }}" breadcrumb="data table,images">
+<x-app-layout title="{{ __('Images of locations') }}">
 
-    <x-main-menu active='data.images' />
+    <x-data-menu />
 
     <livewire:images-table>
 

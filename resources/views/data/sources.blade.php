@@ -1,6 +1,6 @@
-<x-app-layout title="{{ __('Sources of locations') }}" breadcrumb="data table,sources">
+<x-app-layout title="{{ __('Sources of locations') }}">
 
-    <x-main-menu active='data.sources' />
+    <x-data-menu />
 
     <livewire:sources-table>
 

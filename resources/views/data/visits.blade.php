@@ -1,6 +1,6 @@
-<x-app-layout title="{{ __('A list of our visits to locations') }}" breadcrumb="data table,visits">
+<x-app-layout title="{{ __('A list of our visits to locations') }}">
 
-    <x-main-menu active='data.visits' />
+    <x-data-menu />
 
     <livewire:visits-table>
 
