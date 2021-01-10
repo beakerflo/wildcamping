@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="w-1/12">
-                            {!! $Record->Location->getFlagSvg(4) !!}
+                            {!! $Record->Location->getFlag(4) !!}
                         </div>
                     </div>
                 @endforeach

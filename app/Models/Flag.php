@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Flag extends Model
 {
-    use HasFactory;
-
     /**
      * Get the flag of the country.
      */
@@ -17,13 +15,19 @@ class Flag extends Model
     }
 
     /**
-     * Get the correct svg with adjusted width.
+     * Set the correct size in class
      */
-    public function SetSvgWidth($width = '') {
-        if(empty($width)) {
-            return $this->svg;
+    public function ofSize($size = 4) {
+        $class = 'w-' . $size . ' h-' . $size;
+
+        if (str_contains($this->svg,'w-')) {
+            return $this;
+        } elseif (str_contains($this->svg,'class=')) {
+            $this->svg = str_replace('class="', 'class="' . $class . ' ', $this->svg);
         } else {
-            return str_replace('<svg ','<svg class="Svg' . $width . '" ', $this->svg);
+            $this->svg = str_replace('<svg ', '<svg class="' . $class . '" ', $this->svg);
         }
+
+        return $this;
     }
 }

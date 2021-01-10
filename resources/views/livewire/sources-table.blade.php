@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="w-1/12">
-                            <a href="{{ $Record->link }}" target="_blank"><svg class="Svg5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></a>
+                            <a href="{{ $Record->link }}" target="_blank"><x-svg-picker subject='link' size=5 /></a>
                         </div>
                     </div>
                 @endforeach
@@ -74,7 +74,7 @@
                         @foreach($RecordDetails->locations->take(24) as $location)
                         <div class="flex p-1 justify-between text-xs hover:bg-gray-200">
                             <div class="w-9/10 truncate">{{ $location->type->name }} - {{ $location->name }}</div>
-                            <div class="w-1/10 ">{!! $location->getFlagSvg(5) !!}</div>
+                            <div class="w-1/10 ">{!! $location->getFlag(5) !!}</div>
                         </div>
                         @endforeach
                     @else
@@ -87,9 +87,9 @@
                 <x-slot name="footer">
                     @if ($RecordDetails->locations->count() > 24)
                         <a href="#" class="hover:text-floblue text-florange items-center justify-center tex-sm flex space-x-1">
-                            <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg>
+                            svg arrowLeft
                             <div class="lowercase">{{ __('There are more locations, click here') }}</div>
-                            <svg class="Svg4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                            svg arrowRight
                         </a>
                     @endif
                 </x-slot>

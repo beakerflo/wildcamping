@@ -44,22 +44,6 @@
     @apply text-sm font-normal lowercase;
 }
 
-.Svg4 {
-    @apply w-4 h-4;
-}
-
-.Svg5 {
-    @apply w-5 h-5;
-}
-
-.Svg6 {
-    @apply w-6 h-6;
-}
-
-.Svg8 {
-    @apply w-8 h-8;
-}
-
 .TableRow {
     @apply flex justify-between lowercase px-4 py-2;
 }
