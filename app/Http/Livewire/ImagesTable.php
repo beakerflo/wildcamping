@@ -15,11 +15,13 @@ class ImagesTable extends Component
     public $paginate = 12;
 
     public function getRecordDetails($id) {
-        $this->record = Image::with('location','location.images','location.coordinate.address.country.flag')->find($id);
+        $this->record = Image::with('location','location.images','location.coordinate.address.country.flag')
+                            ->find($id);
     }
 
     public function render() {
-        $Images = Image::search($this->search)->with('location','location.images','location.coordinate.address.country.flag');
+        $Images = Image::search($this->search)
+                    ->with('location','location.images','location.coordinate.address.country.flag');
 
         return view('livewire.images-table', [
             'RecordDetails' => $this->record,

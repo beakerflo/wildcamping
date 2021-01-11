@@ -1,0 +1,51 @@
+<x-data-table simpleHeader>
+
+    <x-slot name="top">
+        <div class="space-x-1">
+        </div>
+        <x-records-count count="{{ $Count }}" />
+    </x-slot>
+
+    <x-slot name="header">
+        <div class="w-2/12">
+            {{ __('Time') }}
+        </div>
+
+        <div class="w-3/12">
+            {{ __('Source') }}
+        </div>
+
+        <div class="w-7/12 flex space-x-1">
+            {{ __('Name') }}
+        </div>
+    </x-slot>
+
+    <x-slot name="body">
+        @foreach($Records as $Record)
+            <div class="TableRow hover:bg-gray-200 space-x-1">
+                <div class="w-2/12 flex space-x-3 items-center">
+                    {{ $Record->created_at->DiffForHumans() }}
+                </div>
+
+                <div class="w-3/12 truncate capitalize">
+                    @foreach ($Record->sources as $Source)
+                        {{ $Source->name }}
+                    @endforeach
+                </div>
+
+                <div class="w-7/12 flex space-x-1 truncate">
+                    {{ $Record->name }}
+                </div>
+            </div>
+            @endforeach
+        </x-slot>
+
+        <x-slot name="footer">
+            <div class="text-center">
+                @if ($Count > 8)
+                    {{ __('There is more, click here') }}
+                @endif
+            </div>
+        </x-slot>
+
+</x-data-table>

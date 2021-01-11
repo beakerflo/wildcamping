@@ -1,9 +1,23 @@
+@props(['simpleHeader'])
+
+@php
+if (!isset($simpleHeader)) {
+    $simpleHeader = False;
+} else {
+    $simpleHeader = True;
+}
+
+@endphp
 
 <div class="flex justify-between mb-4 px-2 items-center">
     {{ $top }}
 </div>
 
-<div class="flex rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2 text-flowhite bg-florange">
+@if ($simpleHeader)
+    <div class="flex rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2">
+@else
+    <div class="flex rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2 text-flowhite bg-florange">
+@endif
     {{ $header }}
 </div>
 

@@ -48,7 +48,7 @@
 
                         <div class="w-1/12 flex justify-end items-center space-x-2">
                             {!! $Record->getFlag(5) !!}
-                            <x-record-favorite class="w-5 h-5" favorite="{{ $Record->isFavorite() }}" />
+                            <x-record-favorite favorite="{{ $Record->isFavorite() }}" />
                         </div>
                     </div>
                     @endforeach

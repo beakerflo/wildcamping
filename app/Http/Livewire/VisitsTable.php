@@ -15,7 +15,8 @@ class VisitsTable extends Component
     public $paginate = 24;
 
     public function getRecordDetails($id) {
-        $this->record = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag')->find($id);
+        $this->record = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag')
+                            ->find($id);
     }
 
     public function render() {
