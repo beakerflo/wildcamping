@@ -1,12 +1,12 @@
-<div class="container my-8 mx-auto mt-16 flex">
-    <div class="w-2/3 mr-6">
+<div class="container my-8 mx-auto mt-16 flex flex-col md:flex-row">
+    <div class="w-full md:w-2/3 order-last md:order-first mr-0 md:mr-6 p-2 md:p-0">
         <x-data-table>
 
             <x-slot name="top">
                 <div class="space-x-1">
-                    <x-table-search class="w-36 h-8 text-xs" />
-                    <x-select-types class="text-xs w-24 h-8" />
-                    <x-select-sources class="text-xs w-24 h-8" />
+                    <x-table-search class="w-24 md:w-36 h-8 text-xs" />
+                    <x-select-types class="text-xs w-16 md:w-24 h-8" />
+                    <x-select-sources class="text-xs w-16 md:w-24 h-8" />
                 </div>
                 <x-records-count count="{{ $Count }}" />
             </x-slot>
@@ -30,13 +30,13 @@
 
             <x-slot name="body">
                 @foreach($Records as $Record)
-                    <div wire:click.prevent="getRecordDetails({{ $Record->id }})" class="TableRow hover:bg-gray-200 space-x-1">
+                    <div wire:click.prevent="getRecordDetails({{ $Record->id }})" class="flex flex-wrap md:flex-row justify-between lowercase px-4 py-2 hover:bg-gray-200 space-x-1">
                         <div class="w-2/12 flex space-x-3 items-center">
                             <x-record-private private="{{ $Record->isPrivate() }}" />
                             <div>{{ $Record->type->name }}</div>
                         </div>
 
-                        <div class="w-3/12 truncate capitalize">
+                        <div class="w-3/12 truncate">
                             @foreach ($Record->sources as $Source)
                                 {{ $Source->name }}
                             @endforeach
@@ -46,8 +46,9 @@
                             {{ $Record->name }}
                         </div>
 
-                        <div class="w-1/12 flex justify-end items-center">
+                        <div class="w-full md:w-1/12 order-first md:order-last flex justify-end items-center space-x-1 md:space-x-2">
                             {!! $Record->getFlag(5) !!}
+                            <x-record-private private="{{ $Record->isPrivate() }}" class="md:hidden" />
                         </div>
                     </div>
                 @endforeach
@@ -60,7 +61,7 @@
     </div>
 
     @if (!empty($RecordDetails))
-        <div class="w-1/3 p-2">
+        <div class="w-full md:w-1/3 p-2 mb-8 md:mb-0">
             <x-data-table-details>
                 <x-slot name="top">
                     <div class="flex space-x-1 items-center">

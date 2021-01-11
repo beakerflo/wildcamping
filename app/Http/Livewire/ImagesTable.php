@@ -6,8 +6,7 @@ use App\Models\Image;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class ImagesTable extends Component
-{
+class ImagesTable extends Component {
     use WithPagination;
 
     public $search = '';
@@ -17,6 +16,10 @@ class ImagesTable extends Component
     public function getRecordDetails($id) {
         $this->record = Image::with('location','location.images','location.coordinate.address.country.flag')
                             ->find($id);
+    }
+
+    public function updatingSearch() {
+        $this->resetPage();
     }
 
     public function render() {

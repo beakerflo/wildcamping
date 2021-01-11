@@ -6,8 +6,7 @@ use App\Models\Visit;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class VisitsTable extends Component
-{
+class VisitsTable extends Component {
     use WithPagination;
 
     public $search = '';
@@ -17,6 +16,10 @@ class VisitsTable extends Component
     public function getRecordDetails($id) {
         $this->record = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag')
                             ->find($id);
+    }
+
+    public function updatingSearch() {
+        $this->resetPage();
     }
 
     public function render() {

@@ -1,4 +1,4 @@
-<div class="flex space-x-3 items-center Breadcrumb">
+<div class="flex space-x-1 md:space-x-2 items-center lowercase text-florange font-semibold text-base md:text-lg">
     @if($svg[$steps[0]])
         <x-svg-picker :subject="$svg[$steps[0]]" :size=5 />
     @endif

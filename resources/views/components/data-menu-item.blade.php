@@ -1,7 +1,7 @@
 @props(['route', 'name'])
 
 @php
-$classes = 'font-semibold lowercase flex items-center border-b-2 border-transparent transition ease-in duration-150 pr-4 pb-3 space-x-2 hover:border-gray-400';
+$classes = 'font-semibold lowercase flex flex-col md:flex-row justify-center items-center border-b-2 border-transparent transition ease-in duration-150 p-2 md:p-4 pb-3 space-x-1 md:space-x-2 hover:border-gray-400';
 
 if($route == Route::currentRouteName() ) {
     $classes = $classes . ' border-florange';
@@ -9,6 +9,8 @@ if($route == Route::currentRouteName() ) {
 @endphp
 
 <li {{ $attributes->merge(['class' => $classes]) }}>
-    {{ $slot }}
-    <div><a href="{{ route($route) }}" class="hover:text-floblue">{{ __($name) }}</a></div>
+    <a href="{{ route($route) }}" class="hover:text-floblue">
+        {{ $slot }}
+    </a>
+    <div class="mt-1 md:mt-0"><a href="{{ route($route) }}" class="hover:text-floblue">{{ __($name) }}</a></div>
 </li>

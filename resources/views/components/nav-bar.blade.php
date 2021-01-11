@@ -2,9 +2,17 @@
     <div class="flex space-x-4 items-center">
         <x-logo class="mr-4" />
         <div class="flex items-center">
-            <x-table-search class="w-72" />
+            <x-table-search class="w-72 hidden md:block" />
         </div>
-        <x-nav-menu />
+        <ul class="hidden md:flex items-center space-x-4">
+            <x-nav-menu-item name="Home" route="pages.home" />
+            <x-nav-menu-item name="Data" route="pages.data" />
+            <x-nav-menu-item name="Documentation" route="pages.documentation" />
+            <x-nav-menu-item name="API" route="pages.home" />
+            <x-nav-menu-item name="Services" route="pages.home" />
+            <x-nav-menu-item name="About" route="pages.about" />
+            <x-nav-menu-item name="Contact" route="pages.contact" />
+        </ul>
     </div>
     <div class="flex space-x-4 items-center">
         <div class="relative">

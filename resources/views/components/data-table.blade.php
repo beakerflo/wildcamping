@@ -9,14 +9,14 @@ if (!isset($simpleHeader)) {
 
 @endphp
 
-<div class="flex justify-between mb-4 px-2 items-center">
+<div class="flex justify-between mb-4 items-center">
     {{ $top }}
 </div>
 
 @if ($simpleHeader)
-    <div class="flex rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2">
+    <div class="flex flex-row rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2">
 @else
-    <div class="flex rounded-md rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2 text-flowhite bg-florange">
+    <div class="flex flex-row rounded-b-none border-b-0 border PrimaryBorderColor font-semibold items-start lowercase px-4 py-2 text-flowhite bg-florange">
 @endif
     {{ $header }}
 </div>

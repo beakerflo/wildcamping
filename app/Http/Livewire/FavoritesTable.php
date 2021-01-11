@@ -9,8 +9,7 @@ use App\Models\Type;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class FavoritesTable extends Component
-{
+class FavoritesTable extends Component {
     use WithPagination;
 
     public $search = '';
@@ -21,6 +20,10 @@ class FavoritesTable extends Component
 
     public function getRecordDetails($id) {
         $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
+    }
+
+    public function updatingSearch() {
+        $this->resetPage();
     }
 
     public function render() {

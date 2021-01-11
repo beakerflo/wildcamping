@@ -1,5 +1,5 @@
-<div class="container my-8 mx-auto mt-16 flex">
-    <div class="w-1/2 mr-6">
+<div class="container my-8 mx-auto mt-16 flex flex-col md:flex-row">
+    <div class="w-full md:w-2/3 order-last md:order-first mr-0 md:mr-6 p-2 md:p-0">
         <x-data-table>
 
             <x-slot name="top">
@@ -25,7 +25,7 @@
 
             <x-slot name="body">
                 @foreach($Records as $Record)
-                    <div wire:click.prevent="getRecordDetails({{ $Record->id }})" class="TableRow hover:bg-gray-200 space-x-1 items-center">
+                    <div wire:click.prevent="getRecordDetails({{ $Record->id }})" class="flex flex-wrap md:flex-nowrap justify-between px-2 md:px-4 py-2 hover:bg-gray-200">
                         <div class="w-2/12">
                             {{ $Record->visited_at->DiffForHumans() }}
                         </div>
@@ -53,7 +53,7 @@
     </div>
 
     @if (!empty($RecordDetails))
-        <div class="w-1/2 p-2">
+        <div class="w-full md:w-1/3 p-2 mb-8 md:mb-0">
             <x-data-table-details>
                 <x-slot name="top">
                     <div> </div>

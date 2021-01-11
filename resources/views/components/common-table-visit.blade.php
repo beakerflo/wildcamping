@@ -22,7 +22,7 @@
 
     <x-slot name="body">
         @foreach($Records as $Record)
-            <div class="TableRow hover:bg-gray-200 space-x-1 items-center">
+            <div class="flex flex-wrap md:flex-nowrap justify-between px-2 md:px-4 py-2 hover:bg-gray-200">
                 <div class="w-2/12">
                     {{ $Record->visited_at->DiffForHumans() }}
                 </div>

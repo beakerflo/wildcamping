@@ -1,5 +1,5 @@
-<div class="container my-8 mx-auto mt-16 flex">
-    <div class="w-2/3 mr-6">
+<div class="container my-8 mx-auto mt-16 flex flex-col md:flex-row">
+    <div class="w-full md:w-2/3 order-last md:order-first mt-8 md:mt-0 mr-0 md:mr-6 p-2 md:p-0">
         <x-data-table>
 
             <x-slot name="top">
@@ -30,12 +30,8 @@
         </x-data-table>
     </div>
 
-    @if (empty($RecordDetails))
-        <div class="w-1/3 p-2">
-
-        </div>
-    @else
-        <div class="w-1/3 border PrimaryBorderColor rounded-md shadow-md p-3">
+    @if (!empty($RecordDetails))
+        <div class="w-full md:w-1/3 border PrimaryBorderColor rounded-md shadow-md p-3">
             <div class="flex justify-between mb-4 items-center">
                 <div class="TextHeader px-1">{{ $RecordDetails->Location->name }}</div>
                 <x-records-count count="{{ $Count }}" />

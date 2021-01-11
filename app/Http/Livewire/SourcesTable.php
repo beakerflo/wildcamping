@@ -6,8 +6,7 @@ use App\Models\Source;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class SourcesTable extends Component
-{
+class SourcesTable extends Component {
     use WithPagination;
 
     public $search = '';
@@ -18,6 +17,10 @@ class SourcesTable extends Component
         $this->record = Source::with('locations')->find($id);
     }
 
+    public function updatingSearch() {
+        $this->resetPage();
+    }
+
     public function render() {
         $Sources = Source::Search($this->search)->with('locations');
 
@@ -25,5 +28,6 @@ class SourcesTable extends Component
             'RecordDetails' => $this->record,
             'Count' => number_format($Sources->count(),0,",","."),
             'Records' => $Sources->simplePaginate($this->paginate),
-        ]);    }
+        ]);
+    }
 }

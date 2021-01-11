@@ -4,10 +4,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.Breadcrumb {
-    @apply lowercase text-florange font-semibold text-lg;
-}
-
 .ButtonLeft {
     @apply border border-gray-300 rounded rounded-r-none px-3 py-1 text-xs;
 }
@@ -42,10 +38,6 @@
 
 .SubText {
     @apply text-sm font-normal lowercase;
-}
-
-.TableRow {
-    @apply flex justify-between lowercase px-4 py-2;
 }
 
 .TextHeader {

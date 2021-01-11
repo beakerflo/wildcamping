@@ -1,8 +1,7 @@
 <x-data-table simpleHeader>
 
     <x-slot name="top">
-        <div class="space-x-1">
-        </div>
+        <div></div>
         <x-records-count count="{{ $Count }}" />
     </x-slot>
 
@@ -15,25 +14,25 @@
             {{ __('Source') }}
         </div>
 
-        <div class="w-7/12 flex space-x-1">
+        <div class="w-7/12">
             {{ __('Name') }}
         </div>
     </x-slot>
 
     <x-slot name="body">
         @foreach($Records as $Record)
-            <div class="TableRow hover:bg-gray-200 space-x-1">
-                <div class="w-2/12 flex space-x-3 items-center">
+            <div class="flex justify-between px-2 md:px-4 py-2 hover:bg-gray-200">
+                <div class="w-2/12 truncate">
                     {{ $Record->created_at->DiffForHumans() }}
                 </div>
 
-                <div class="w-3/12 truncate capitalize">
+                <div class="w-3/12 truncate">
                     @foreach ($Record->sources as $Source)
                         {{ $Source->name }}
                     @endforeach
                 </div>
 
-                <div class="w-7/12 flex space-x-1 truncate">
+                <div class="w-7/12 truncate">
                     {{ $Record->name }}
                 </div>
             </div>

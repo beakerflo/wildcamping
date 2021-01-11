@@ -6,8 +6,7 @@ use App\Models\Location;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class LocationsTable extends Component
-{
+class LocationsTable extends Component {
     use WithPagination;
 
     public $search = '';
@@ -18,6 +17,10 @@ class LocationsTable extends Component
 
     public function getRecordDetails($id) {
         $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
+    }
+
+    public function updatingSearch() {
+        $this->resetPage();
     }
 
     public function render() {
