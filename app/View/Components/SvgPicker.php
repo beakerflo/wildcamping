@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use App\Models\svg;
+use App\Models\Svg;
 use Exception;
 use Illuminate\View\Component;
 
@@ -30,10 +30,10 @@ class SvgPicker extends Component
      */
     public function render() {
 
-        $svg = svg::OfSubject($this->subject)->first()->ofSize($this->size)->withClass($this->class);
+        $Svg = Svg::OfSubject($this->subject)->first()->ofSize($this->size)->withClass($this->class);
 
         return view('components.svg-picker', [
-            'svg' => $svg->svg
+            'Code' => $Svg->code
         ]);
     }
 }

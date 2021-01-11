@@ -1,6 +1,6 @@
 <div class="flex space-x-1 md:space-x-2 items-center lowercase text-florange font-semibold text-base md:text-lg">
-    @if($svg[$steps[0]])
-        <x-svg-picker :subject="$svg[$steps[0]]" :size=5 />
+    @if($Svg[$steps[0]])
+        <x-Svg-picker :subject="$Svg[$steps[0]]" :size=5 />
     @endif
 
     @foreach ($steps as $step)

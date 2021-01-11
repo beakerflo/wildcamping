@@ -2,10 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class svg extends Model {
+class Svg extends Model {
 
     /**
      * Fillable fields of this model
@@ -13,7 +12,7 @@ class svg extends Model {
      */
     protected $fillable = [
         'subject',
-        'svg'
+        'code'
     ];
 
     /**
@@ -22,12 +21,12 @@ class svg extends Model {
     public function ofSize($size = 4) {
         $class = 'w-' . $size . ' h-' . $size;
 
-        if (str_contains($this->svg,'w-')) {
+        if (str_contains($this->code, 'w-')) {
             return $this;
-        } elseif (str_contains($this->svg,'class=')) {
-            $this->svg = str_replace('class="', 'class="' . $class . ' ', $this->svg);
+        } elseif (str_contains($this->code,'class=')) {
+            $this->code = str_replace('class="', 'class="' . $class . ' ', $this->code);
         } else {
-            $this->svg = str_replace('<svg ', '<svg class="' . $class . '" ', $this->svg);
+            $this->code = str_replace('<svg ', '<svg class="' . $class . '" ', $this->code);
         }
 
         return $this;
@@ -46,12 +45,12 @@ class svg extends Model {
             return $this;
         }
 
-        if (str_contains($this->svg, $class)) {
+        if (str_contains($this->code, $class)) {
             return $this;
-        } elseif (str_contains($this->svg, ' class=')) {
-            $this->svg = str_replace(' class="', ' class="' . $class . ' ', $this->svg);
+        } elseif (str_contains($this->code, ' class=')) {
+            $this->code = str_replace(' class="', ' class="' . $class . ' ', $this->code);
         } else {
-            $this->svg = str_replace('<svg fill', '<svg class="' . $class . '" fill', $this->svg);
+            $this->code = str_replace('<svg fill', '<svg class="' . $class . '" fill', $this->code);
         }
 
         return $this;

@@ -42,7 +42,7 @@ class Breadcrumb extends Component
     {
         return view('components.breadcrumb',[
             'steps' => $this->steps,
-            'svg' => $this->svg,
+            'Svg' => $this->svg,
             'routes' => $this->routes
         ]);
     }

@@ -16,7 +16,7 @@ class CreateSvgsTable extends Migration
         Schema::create('svgs', function (Blueprint $table) {
             $table->id();
             $table->string('subject')->unique();
-            $table->mediumText('svg');
+            $table->mediumText('code');
             $table->index('subject');
         });
     }

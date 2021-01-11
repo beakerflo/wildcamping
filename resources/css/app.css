@@ -44,10 +44,6 @@
     @apply text-lg font-semibold text-florange;
 }
 
-.TopMenuItem {
-    @apply lowercase font-semibold;
-}
-
 .WhiteOnOrange {
     @apply text-flowhite bg-florange;
 }

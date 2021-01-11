@@ -131,7 +131,7 @@ class Location extends Model {
         if($this->coordinate->address) {
             return $this->coordinate->address->country->flag->ofSize($size)->svg;
         } else {
-            return svg::OfSubject('unknown')->first()->ofSize($size)->svg;
+            return Svg::OfSubject('unknown')->first()->ofSize($size)->svg;
         }
     }
 
