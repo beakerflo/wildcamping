@@ -10,10 +10,10 @@ module.exports = {
 
     theme: {
         extend: {
-            fontFamily: {   
+            fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
-            colors: {   
+            colors: {
                 florange: {
                     light: '#d67935',
                     default: '#cc5803',

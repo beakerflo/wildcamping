@@ -17,7 +17,8 @@ class Breadcrumb extends Component
         $this->svg = [
             'data tables' => 'data',
             'pages' => 'pages',
-            'home' => 'home'
+            'home' => 'home',
+            'teams' => 'teams'
         ];
         $this->routes = [
             'data tables' => 'pages.data',
@@ -29,7 +30,8 @@ class Breadcrumb extends Component
             'images' => 'data.images',
             'welcome' => 'pages.welcome',
             'home' => 'pages.home',
-            'data' => 'pages.data'
+            'data' => 'pages.data',
+            'teams' => 'profile.show',
         ];
     }
 

@@ -14,7 +14,7 @@
 
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans subpixel-antialiased text-floblue-dark text-sm bg-flowhite">
+    <body class="font-sans subpixel-antialiased text-floblue-dark text-sm bg-flowhite dark:text-flowhite dark:bg_floblue-dark">
 
         <x-nav-bar />
 

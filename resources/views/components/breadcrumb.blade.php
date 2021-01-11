@@ -4,7 +4,13 @@
     @endif
 
     @foreach ($steps as $step)
-        <div><a href="{{ route($routes[$step]) }}" class="hover:text-florange-dark hover:underline">{{ __($step) }}</a></div>
+        @php if (!isset($routes[$step])) { $routes[$step] = '#'; } @endphp
+        @if($routes[$step] == '#')
+            <div><a href="#" class="hover:text-florange-dark hover:underline">{{ __($step) }}</a></div>
+        @else
+            <div><a href="{{ route($routes[$step]) }}" class="hover:text-florange-dark hover:underline">{{ __($step) }}</a></div>
+        @endif
+
         <div>/</div>
     @endforeach
 </div>
