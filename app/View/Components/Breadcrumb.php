@@ -18,7 +18,8 @@ class Breadcrumb extends Component
             'data tables' => 'data',
             'pages' => 'pages',
             'home' => 'home',
-            'teams' => 'teams'
+            'teams' => 'teams',
+            'profile' => 'profile'
         ];
         $this->routes = [
             'data tables' => 'pages.data',
@@ -32,6 +33,7 @@ class Breadcrumb extends Component
             'home' => 'pages.home',
             'data' => 'pages.data',
             'teams' => 'profile.show',
+            'profile' => 'profile.show'
         ];
     }
 

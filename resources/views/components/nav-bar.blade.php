@@ -1,4 +1,5 @@
 <nav x-data="{ open: false, propen: false }" class="WhiteOnOrange">
+
     <div class="flex justify-between items-center px-4 py-3">
         <div class="flex space-x-4 items-center">
             <x-logo class="md:mr-4" />
@@ -24,12 +25,11 @@
             </ul>
         </div>
         <div class="flex space-x-4 items-center">
-            <div class="relative">
-                <a href="#" class="hover:text-gray-300"><x-svg-picker subject="bell" size=6 /></a>
-                <div class="absolute bg-floblue-light rounded-full top-0 right-0 w-2 h-2"></div>
-            </div>
+                <livewire:notification-menu>
             <div>
-                <a href="#" class="hover:text-gray-300"><x-svg-picker subject="plus" size=6 /></a>
+                @if(Auth::check())
+                    <a href="#" class="hover:text-gray-300"><x-svg-picker subject="plus" size=6 /></a>
+                @endif
             </div>
             <div>
                 <livewire:profile-menu>
