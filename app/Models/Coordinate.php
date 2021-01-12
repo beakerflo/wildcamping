@@ -2,14 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
 class Coordinate extends Model
 {
-    use HasFactory;
-
     /**
      * Fillable fields of this model
      *
@@ -29,6 +25,20 @@ class Coordinate extends Model
     }
 
     /**
+     * Get the locations for this coordinate.
+     */
+    public function what3words() {
+        return $this->belongsTo(What3words::class,'what3words_id');
+    }
+
+    /**
+     * Get the locations for this coordinate.
+     */
+    public function nearPlace() {
+        return $this->belongsTo(NearPlace::class);
+    }
+
+    /**
      * Get the maps of the coordinates
      */
     public function maps() {
@@ -40,5 +50,49 @@ class Coordinate extends Model
      */
     public function locations() {
         return $this->hasMany(Location::class);
+    }
+
+    /**
+     * Calculate DMS from a single coordinate
+     */
+    private static function calculateDMS($type, $gps) {
+        if ($gps < 0 and $type == 'lat') {
+            $hem = 'S';
+        } elseif ($type == 'lat') {
+            $hem = 'N';
+        }
+
+        if ($gps < 0 and $type == 'lng') {
+            $hem = 'W';
+        } elseif ($type == 'lng') {
+            $hem = 'E';
+        }
+
+        $output = array();
+        for ($x = 0; $x < 3; $x++) {
+            if($x == 2) {
+                array_push($output, $gps);
+            } else {
+                $vartmp = explode('.', $gps);
+                array_push($output, $vartmp[0]);
+                $gps = ("0." . $vartmp[1]) *60;
+            }
+        }
+        return ($output[0] . "°" . $output[1] . "'" . $output[2] . '"' . $hem);
+    }
+
+    /**
+     * Convert GPS to DMS
+     */
+    public function withDmsFormat() {
+
+        if ($this->latitude and $this->longitude) {
+            $this->latitude_dms = $this->calculateDMS('lat', $this->latitude);
+            $this->longitude_dms = $this->calculateDMS('lng', $this->longitude);
+
+            return $this;
+        } else {
+            return $this;
+        }
     }
 }

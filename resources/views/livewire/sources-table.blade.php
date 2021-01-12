@@ -34,7 +34,9 @@
                         </div>
 
                         <div class="w-6/12" wire:click.prevent="getRecordDetails({{ $Record->id }})">
-                            {{ $Record->description }}
+                            @if ($Record->description)
+                                {{ $Record->description }}
+                            @endif
                         </div>
 
                         <div class="w-1/12">

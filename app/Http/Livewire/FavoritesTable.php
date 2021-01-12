@@ -19,7 +19,7 @@ class FavoritesTable extends Component {
     public $source = '';
 
     public function getRecordDetails($id) {
-        $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
+        $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id)->withDmsFormat();
     }
 
     public function updatingSearch() {

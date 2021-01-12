@@ -17,7 +17,7 @@
 }
 
 .Header {
-    @apply text-florange font-bold mb-1;
+    @apply text-florange font-bold;
 }
 
 .HoverOnWhiteBgColor {

@@ -136,6 +136,20 @@ class Location extends Model {
     }
 
     /**
+     * Retrieve DMS format if coordinates are set
+     *
+     */
+    public function withDmsFormat() {
+        If ($this->coordinate) {
+            $this->coordinate->withDmsFormat();
+
+            return $this;
+        } else {
+            return $this;
+        }
+    }
+
+    /**
      * Scope a query to only include records with specific search parameters.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query

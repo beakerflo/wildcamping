@@ -16,7 +16,7 @@ class LocationsTable extends Component {
     public $paginate = 24;
 
     public function getRecordDetails($id) {
-        $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id);
+        $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id)->withDmsFormat();
     }
 
     public function updatingSearch() {
