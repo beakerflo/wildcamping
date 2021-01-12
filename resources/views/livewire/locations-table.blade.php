@@ -104,8 +104,8 @@
                                 <li>gps: {{ $RecordDetails->coordinate->latitude . ', ' . $RecordDetails->coordinate->longitude }}</li>
                                 <li>gps dms: {{ $RecordDetails->coordinate->latitude_dms . ' ' . $RecordDetails->coordinate->longitude_dms }}</li>
                                 @if ($RecordDetails->coordinate->what3words)
-                                    <li>w3w (nl): {{ $RecordDetails->coordinate->what3words->nl }}</li>
-                                    <li>w3w (en): {{ $RecordDetails->coordinate->what3words->en }}</li>
+                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->nl }}" target="blank">w3w (nl): {{ $RecordDetails->coordinate->what3words->nl }}</a></li>
+                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->en }}" target="blank">w3w (en): {{ $RecordDetails->coordinate->what3words->en }}</a></li>
                                 @endif
                             </ul>
                         </div>
