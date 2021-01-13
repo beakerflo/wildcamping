@@ -14,58 +14,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('pages.welcome')->with('title', 'Welcome');
-})->name('welcome');
-
-Route::get('/home', function () {
-    return view('pages.welcome');
-})->name('home');
-
 Route::name('pages.')->group(function () {
-    Route::get('/pages/welcome', function () {
-        return view('pages.welcome');
-    })->name('welcome');
-    Route::get('/', function () {
-        return view('pages.welcome');
-    })->name('home');
-    Route::get('/documentation', function () {
-        return view('pages.documentation');
-    })->name('documentation');
-    Route::get('/apidocs', function () {
-        return view('pages.api');
-    })->name('apidocs');
-    Route::get('/about', function () {
-        return view('pages.about');
-    })->name('about');
-    Route::get('/contact', function () {
-        return view('pages.contact');
-    })->name('contact');
-    Route::get('/security', function () {
-        return view('pages.security');
-    })->name('security');
-    Route::get('/privacy', function () {
-        return view('pages.privacy');
-    })->name('privacy');
+
+    Route::view('/', 'pages.welcome')->name('welcome');
+    Route::view('/about', 'pages.about')->name('about');
+    Route::view('/apidocs', 'pages.apidocs')->name('apidocs');
+    Route::view('/contact', 'pages.contact')->name('contact');
+    Route::view('/home', 'pages.home')->name('home');
+    Route::view('/documentation', 'pages.documentation')->name('documentation');
+    Route::view('/privacy', 'pages.privacy')->name('privacy');
+    Route::view('/security', 'pages.security')->name('security');
+    Route::view('/services', 'pages.services')->name('services');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->name('data.')->group(function () {
-    Route::get('/data/overview', function () {
-        return view('data.overview');
-    })->name('overview');
-    Route::get('/data/locations', function () {
-        return view('data.locations');
-    })->name('locations');
-    Route::get('/data/sources', function () {
-        return view('data.sources');
-    })->name('sources');
-    Route::get('/data/favorites', function () {
-        return view('data.favorites');
-    })->name('favorites');
-    Route::get('/data/visits', function () {
-        return view('data.visits');
-    })->name('visits');
-    Route::get('/data/images', function () {
-        return view('data.images');
-    })->name('images');
+    Route::view('/data/overview', 'data.overview')->name('overview');
+    Route::view('/data/locations', 'data.locations')->name('locations');
+    Route::view('/data/sources', 'data.sources')->name('sources');
+    Route::view('/data/favorites', 'data.favorites')->name('favorites');
+    Route::view('/data/visits', 'data.visits')->name('visits');
+    Route::view('/data/images', 'data.images')->name('images');
 });

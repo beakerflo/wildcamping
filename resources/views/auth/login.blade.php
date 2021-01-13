@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Login the site">
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-application-logo class="block h-32 w-auto" />

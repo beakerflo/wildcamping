@@ -1,4 +1,4 @@
-<x-app-layout title="{{ __('Profile page') }}">
+<x-app-layout title="Profile page">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Profile') }}

@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Forgot your password?">
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-application-logo class="block h-32 w-auto" />

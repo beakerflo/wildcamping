@@ -16,24 +16,33 @@ class StatisticsBar extends Component
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
+        $this->team = Auth::User()->allTeams()->pluck('name')->toArray();
+        $this->statistics = '';
+    }
+
+    /**
+     * Calculate Statistics for use in the view
+     *
+     * @return void
+     */
+    public function calculateStatistics() {
         $this->statistics = [
             [
                 'logo' => 'sources',
-                'number' => number_format(Source::InTeam(Auth::User()->allTeams()->pluck('name')->toArray())->count(),0,",","."),
+                'number' => number_format(Source::InTeam($this->team)->count(),0,",","."),
                 'route' => 'data.sources'
             ],[
                 'logo' => 'locations',
-                'number' => number_format(Location::InTeam(Auth::User()->allTeams()->pluck('name')->toArray())->count(),0,",","."),
+                'number' => number_format(Location::InTeam($this->team)->count(),0,",","."),
                 'route' => 'data.locations'
             ],[
                 'logo' => 'visits',
-                'number' => number_format(Visit::InTeam(Auth::User()->allTeams()->pluck('name')->toArray())->count(),0,",","."),
+                'number' => number_format(Visit::InTeam($this->team)->count(),0,",","."),
                 'route' => 'data.visits'
             ],[
                 'logo' => 'favorites',
-                'number' => number_format(Favorite::InTeam(Auth::User()->allTeams()->pluck('name')->toArray())->count(),0,",","."),
+                'number' => number_format(Favorite::InTeam($this->team)->count(),0,",","."),
                 'route' => 'data.favorites'
             ]
         ];
@@ -45,6 +54,8 @@ class StatisticsBar extends Component
      * @return \Illuminate\Contracts\View\View|string
      */
     public function render() {
+        $this->calculateStatistics();
+
         return view('components.statistics-bar', [
             'statistics' => $this->statistics
         ]);

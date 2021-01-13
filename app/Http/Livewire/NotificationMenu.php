@@ -17,12 +17,8 @@ class NotificationMenu extends Component {
     }
 
     public function loggedOn() {
-        If (Auth::check()) {
-            $this->user = Auth::user();
-            $this->loggedOn = True;
-        } else {
-            $this->loggedOn = False;
-        }
+        $this->loggedOn = Auth::check();
+        $this->user = Auth::user();
     }
 
     public function render() {

@@ -21,6 +21,7 @@ class CommonTable extends Component
         $this->model = $model;
         $this->orderBy = $orderBy;
         $this->paginate = $paginate;
+        $this->team = Auth::User()->currentTeam->name;
     }
 
     /**
@@ -31,18 +32,27 @@ class CommonTable extends Component
     public function render() {
         Switch($this->model) {
             case 'Location':
-                $records = Location::InTeam(Auth::User()->currentTeam->name)->orderBy($this->orderBy)->with('type','favorite','sources','coordinate.address.country.flag');
+                $records = Location::InTeam($this->team)
+                                ->orderBy($this->orderBy)
+                                ->with('type','favorite','sources','coordinate.address.country.flag');
                 break;
 
             case 'Source':
-                $records = Source::InTeam(Auth::User()->currentTeam->name)->with('locations');
+                $records = Source::InTeam($this->team)
+                                ->orderBy($this->orderBy)
+                                ->with('locations');
                 break;
+
             case 'Visit':
-                $records = Visit::InTeam(Auth::User()->currentTeam->name)->with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
+                $records = Visit::InTeam($this->team)
+                                ->orderBy($this->orderBy)
+                                ->with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
                 break;
 
             case 'Image':
-                $records = Image::InTeam(Auth::User()->currentTeam->name)->with('location','location.images','location.coordinate.address.country.flag');
+                $records = Image::InTeam($this->team)
+                                ->orderBy($this->orderBy)
+                                ->with('location','location.images','location.coordinate.address.country.flag');
                 break;
         }
 

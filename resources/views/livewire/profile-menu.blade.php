@@ -1,7 +1,7 @@
 <div>
     @if($loggedOn)
         <a href="javascript:void(0);" wire:click="toggle">
-            <img src="{{ $profilePic }}" class="rounded-full w-8 h-8" alt="{{ Auth::user()->name }}">
+            <img src="{{ $user->profile_photo_url }}" class="rounded-full w-8 h-8" alt="{{ $user->name }}">
         </a>
 
         @if($isVisible)
@@ -31,7 +31,7 @@
                                 </div>
 
                                 <!-- Team Settings -->
-                                <x-jet-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
+                                <x-jet-dropdown-link href="{{ route('teams.show', $user->currentTeam->id) }}">
                                     {{ __('Team Settings') }}
                                 </x-jet-dropdown-link>
 
@@ -48,7 +48,7 @@
                                     {{ __('Switch Teams') }}
                                 </div>
 
-                                @foreach (Auth::user()->allTeams() as $team)
+                                @foreach ($user->allTeams() as $team)
                                     <x-jet-switchable-team :team="$team" />
                                 @endforeach
 

@@ -14,13 +14,33 @@ class SvgPicker extends Component
      * @return void
      */
     public function __construct($subject = '', $class = '', $size = 4) {
-        If (empty($subject)) {
-            $this->subject = 'unknown';
-        } Else {
-            $this->subject = strtolower($subject);
-        }
+
+        $this->subject = $subject;
         $this->size = $size;
         $this->class = $class;
+
+    }
+
+    /**
+     * Check if we hare a correct Subject
+     *
+     * @return void
+     */
+    function checkSubject() {
+
+        If (empty($this->subject)) {
+            $this->subject = 'unknown';
+            return;
+        } Else {
+            $this->subject = strtolower($this->subject);
+        }
+
+        If (Svg::where('subject',$this->subject)->count() > 0) {
+            return;
+        } Else {
+            $this->subject = 'unknown';
+        }
+
     }
 
     /**
@@ -30,10 +50,13 @@ class SvgPicker extends Component
      */
     public function render() {
 
+        $this->checkSubject();
         $Svg = Svg::OfSubject($this->subject)->first()->ofSize($this->size)->withClass($this->class);
 
         return view('components.svg-picker', [
             'Code' => $Svg->code
         ]);
+
     }
+
 }

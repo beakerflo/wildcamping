@@ -18,8 +18,8 @@
                 <x-nav-menu-item item="Home" route="pages.home" />
                 <x-nav-menu-item item="Data" route="data.overview" />
                 <x-nav-menu-item item="Documentation" route="pages.documentation" />
-                <x-nav-menu-item item="API" route="pages.home" />
-                <x-nav-menu-item item="Services" route="pages.home" />
+                <x-nav-menu-item item="API" route="pages.apidocs" />
+                <x-nav-menu-item item="Services" route="pages.services" />
                 <x-nav-menu-item item="About" route="pages.about" />
                 <x-nav-menu-item item="Contact" route="pages.contact" />
             </ul>
@@ -41,8 +41,8 @@
                 <x-drop-down-menu-item item="Home" route="pages.home" />
                 <x-drop-down-menu-item item="Data" route="data.overview" />
                 <x-drop-down-menu-item item="Documentation" route="pages.documentation" />
-                <x-drop-down-menu-item item="API" route="pages.home" />
-                <x-drop-down-menu-item item="Services" route="pages.home" />
+                <x-drop-down-menu-item item="API" route="pages.apidocs" />
+                <x-drop-down-menu-item item="Services" route="pages.services" />
                 <x-drop-down-menu-item item="About" route="pages.about" />
                 <x-drop-down-menu-item item="Contact" route="pages.contact" />
             </div>

@@ -11,10 +11,9 @@ class AppLayout extends Component
      *
      * @return void
      */
-    public function __construct($title = "No Title", $breadcrumb = 'pages,unknown')
+    public function __construct($title = "No Title")
     {
         $this->title = $title;
-        $this->breadcrumb = $breadcrumb;
     }
 
     /**
@@ -25,8 +24,7 @@ class AppLayout extends Component
     public function render()
     {
         return view('layouts.app',[
-            'title' => $this->title,
-            'breadcrumb' => $this->breadcrumb
+            'title' => $this->title
         ]);
     }
 }

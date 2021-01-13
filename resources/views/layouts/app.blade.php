@@ -7,7 +7,7 @@
 
         <x-web-icons />
 
-        <title>{{ $title }} | {{ config('app.name', 'Laravel') }}</title>
+        <title>{{ __($title) }} | {{ config('app.name', 'Laravel') }}</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         @livewireStyles

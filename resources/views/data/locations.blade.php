@@ -1,4 +1,4 @@
-<x-app-layout title="{{ __('A list of our locations') }}">
+<x-app-layout title="A list of our locations">
 
     <x-data-menu />
 

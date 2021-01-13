@@ -1,4 +1,4 @@
-<x-app-layout title="{{ __('The data of the site') }}">
+<x-app-layout title="The data of the site">
     <x-data-menu />
 
     <div class="container my-8 mx-auto mt-16 flex">

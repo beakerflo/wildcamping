@@ -17,14 +17,8 @@ class ProfileMenu extends Component {
     }
 
     public function loggedOn() {
-        If (Auth::check()) {
-            $this->user = Auth::user();
-            $this->loggedOn = True;
-            $this->profilePic = Auth::user()->profile_photo_url;
-        } else {
-            $this->loggedOn = False;
-            $this->profilePic = '';
-        }
+        $this->loggedOn = Auth::check();
+        $this->user = Auth::user();
     }
 
     public function render() {
