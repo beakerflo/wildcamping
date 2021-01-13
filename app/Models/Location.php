@@ -2,11 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Location extends Model {
+class Location extends ModelWithTeams {
     use HasFactory;
 
     /**
@@ -21,13 +19,6 @@ class Location extends Model {
         'type_id',
         'coordinate_id'
     ];
-
-    /**
-     * Get the user that created the location.
-     */
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
 
     /**
      * Get the type of this location.
@@ -213,4 +204,5 @@ class Location extends Model {
             });
         }
     }
+
 }

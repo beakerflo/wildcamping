@@ -34,4 +34,38 @@ class Address extends Model
         return $this->hasOne(Coordinate::class);
     }
 
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $search) {
+        if(empty($search)) {
+            return $query;
+        } else {
+            return $query
+                ->where('description', 'like', '%' . $search . '%')
+                ->OrWhere('road', 'like', '%' . $search . '%')
+                ->OrWhere('city', 'like', '%' . $search . '%')
+                ->OrWhere('state', 'like', '%' . $search . '%')
+                ->OrWhere('part', 'like', '%' . $search . '%');
+        }
+    }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeInTeam($query, $team) {
+
+        # TOCHECK
+        Return $query;
+
+    }
+
 }

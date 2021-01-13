@@ -1,6 +1,6 @@
 <div>
     <ul class="flex items-center justify-evenly md:justify-start px-8 mt-4 border-b md:space-x-4 PrimaryBorderColor">
-        <x-data-menu-item name="Overview" route="pages.data">
+        <x-data-menu-item name="Overview" route="data.overview">
             <x-svg-picker subject="overview" size=4 />
         </x-data-menu-item>
 

@@ -18,6 +18,7 @@ class CreateFavoritesTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('location_id');
             $table->timestamps();
+            $table->unique(['location_id', 'user_id']);
         });
     }
 

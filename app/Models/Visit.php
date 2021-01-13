@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Visit extends Model
+class Visit extends ModelWithTeams
 {
     use HasFactory;
 
@@ -30,13 +29,6 @@ class Visit extends Model
     ];
 
     /**
-     * Get the user that made the visit
-     */
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
      * Get the location of the visit
      */
     public function location() {
@@ -58,4 +50,5 @@ class Visit extends Model
                 ->where('story', 'like', '%' . $search . '%');
         }
     }
+
 }

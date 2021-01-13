@@ -15,11 +15,10 @@ class CreateTagsTable extends Migration
     {
         Schema::create('tags', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
             $table->string('name');
             $table->timestamps();
             $table->softDeletes();
-            $table->unique(['user_id', 'name']);
+            $table->unique(['name']);
         });
     }
 

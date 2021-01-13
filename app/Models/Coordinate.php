@@ -95,4 +95,19 @@ class Coordinate extends Model
             return $this;
         }
     }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeInTeam($query, $team) {
+
+        # TOCHECK
+        Return $query;
+
+    }
+
 }

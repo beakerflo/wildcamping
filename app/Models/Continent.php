@@ -15,4 +15,5 @@ class Continent extends Model
     public function regions() {
         return $this->hasMany(Region::class);
     }
+
 }

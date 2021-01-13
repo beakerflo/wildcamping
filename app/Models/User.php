@@ -26,8 +26,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 
-        'email', 
+        'name',
+        'email',
         'password',
     ];
 
@@ -90,13 +90,6 @@ class User extends Authenticatable
     }
 
     /**
-     * Get the tags created by the user.
-     */
-    public function tags() {
-        return $this->hasMany(Tag::class);
-    }
-
-    /**
      * Get the types created by the user.
      */
     public function types() {
@@ -109,4 +102,5 @@ class User extends Authenticatable
     public function visits() {
         return $this->hasMany(Visit::class);
     }
+
 }

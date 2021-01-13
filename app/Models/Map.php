@@ -26,4 +26,5 @@ class Map extends Model
     public function coordinate() {
         return $this->belongsTo(Coordinate::class);
     }
+
 }

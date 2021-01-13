@@ -4,7 +4,7 @@
         <div class="flex space-x-4 items-center">
             <x-logo class="md:mr-4" />
             <div class="flex items-center">
-                <x-table-search class="w-72 hidden md:block" />
+                <x-table-search-bar class="w-72 hidden md:block" />
             </div>
             <div class="block md:hidden items-center">
                 <button @click="open = ! open" class="rounded-full inline-flex items-center justify-center p-2 hover:text-gray-300 focus:outline-none focus:bg-flowhite focus:text-florange transition duration-150 ease-in-out">
@@ -16,7 +16,7 @@
             </div>
             <ul class="hidden md:flex items-center space-x-3">
                 <x-nav-menu-item item="Home" route="pages.home" />
-                <x-nav-menu-item item="Data" route="pages.data" />
+                <x-nav-menu-item item="Data" route="data.overview" />
                 <x-nav-menu-item item="Documentation" route="pages.documentation" />
                 <x-nav-menu-item item="API" route="pages.home" />
                 <x-nav-menu-item item="Services" route="pages.home" />
@@ -25,15 +25,13 @@
             </ul>
         </div>
         <div class="flex space-x-4 items-center">
-                <livewire:notification-menu>
-            <div>
-                @if(Auth::check())
-                    <a href="#" class="hover:text-gray-300"><x-svg-picker subject="plus" size=6 /></a>
-                @endif
-            </div>
-            <div>
-                <livewire:profile-menu>
-            </div>
+            <livewire:notification-menu>
+
+            @if(Auth::check())
+                <a href="#" class="hover:text-gray-300"><x-svg-picker subject="plus" size=6 /></a>
+            @endif
+
+            <livewire:profile-menu>
         </div>
     </div>
 
@@ -41,7 +39,7 @@
         <div class="absolute z-50 mt-2 w-48 rounded-md shadow-lg origin-top-left left-10">
             <div class="rounded-md shadow-xs py-1 bg-flowhite">
                 <x-drop-down-menu-item item="Home" route="pages.home" />
-                <x-drop-down-menu-item item="Data" route="pages.data" />
+                <x-drop-down-menu-item item="Data" route="data.overview" />
                 <x-drop-down-menu-item item="Documentation" route="pages.documentation" />
                 <x-drop-down-menu-item item="API" route="pages.home" />
                 <x-drop-down-menu-item item="Services" route="pages.home" />

@@ -71,4 +71,5 @@ class Svg extends Model {
                 ->where('subject', $subject);
         }
     }
+
 }

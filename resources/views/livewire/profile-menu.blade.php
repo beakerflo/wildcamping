@@ -8,8 +8,7 @@
             <div class="bg-gray-100 text-floblue-dark" >
                 <div class="absolute z-50 mt-2 w-48 rounded-md shadow-lg origin-top-right right-10">
                     <div class="rounded-md shadow-xs py-1 bg-flowhite">
-                            <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
+                            <div class="block px-4 py-2 italic text-floblue">
                                 {{ __('Manage Account') }}
                             </div>
 
@@ -23,11 +22,11 @@
                                 </x-jet-dropdown-link>
                             @endif
 
-                            <div class="border-t border-gray-100"></div>
+                            <div class="border-t border-gray-300"></div>
 
                             <!-- Team Management -->
                             @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
-                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                <div class="block px-4 py-2 italic text-floblue">
                                     {{ __('Manage Team') }}
                                 </div>
 
@@ -42,10 +41,10 @@
                                     </x-jet-dropdown-link>
                                 @endcan
 
-                                <div class="border-t border-gray-100"></div>
+                                <div class="border-t border-gray-300"></div>
 
                                 <!-- Team Switcher -->
-                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                <div class="block px-4 py-2 italic text-floblue">
                                     {{ __('Switch Teams') }}
                                 </div>
 
@@ -53,7 +52,7 @@
                                     <x-jet-switchable-team :team="$team" />
                                 @endforeach
 
-                                <div class="border-t border-gray-100"></div>
+                                <div class="border-t border-gray-300"></div>
                             @endif
 
                             <!-- Authentication -->

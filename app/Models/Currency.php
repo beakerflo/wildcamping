@@ -15,4 +15,5 @@ class Currency extends Model
     public function countries() {
         return $this->hasMany(Country::class);
     }
+
 }

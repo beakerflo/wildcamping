@@ -19,17 +19,26 @@ class Tag extends Model
     ];
 
     /**
-     * Get the user that created the tag.
-     */
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
      * Get the locations for this tag.
      */
     public function locations() {
         return $this->belongsToMany(Location::class);
+    }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $search) {
+        if(empty($search)) {
+            return $query;
+        } else {
+            return $query
+                ->where('name', 'like', '%' . $search . '%');
+        }
     }
 
 }

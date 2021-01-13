@@ -38,4 +38,11 @@ class Team extends JetstreamTeam
         'updated' => TeamUpdated::class,
         'deleted' => TeamDeleted::class,
     ];
+
+    /**
+     * Get the locations from the team.
+     */
+    public function locations() {
+        return $this->belongsToMany(Location::class);
+    }
 }

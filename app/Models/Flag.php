@@ -30,4 +30,5 @@ class Flag extends Model
 
         return $this;
     }
+
 }

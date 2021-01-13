@@ -4,9 +4,10 @@
 
             <x-slot name="top">
                 <div class="space-x-1">
-                    <x-table-search class="w-28 md:w-36 h-8 text-xs" />
+                    <x-table-search-bar class="w-28 md:w-36 h-8 text-xs" />
                     <x-select-types class="text-xs w-18 md:w-24 h-8" />
-                    <x-select-sources class="text-xs w-18 md:w-24 h-8" />
+                    <x-select-sources class="text-xs w-18 md:w-24 h-8" :teams="$Team" />
+                    <x-select-teams class="text-xs w-18 md:w-24 h-8" />
                 </div>
                 <x-records-count count="{{ $Count }}" />
             </x-slot>

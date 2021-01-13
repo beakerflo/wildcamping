@@ -43,4 +43,5 @@ class Country extends Model
     public function flag() {
         return $this->belongsTo(Flag::class);
     }
+
 }

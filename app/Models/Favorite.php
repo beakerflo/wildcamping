@@ -3,9 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Favorite extends Model {
+class Favorite extends ModelWithTeams {
+
+    use HasFactory;
 
     /**
      * Fillable fields of this model
@@ -17,16 +18,10 @@ class Favorite extends Model {
     ];
 
     /**
-     * Get the user that favorited the location.
-     */
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
      * Get the location that is favorited.
      */
     public function location() {
         return $this->belongsTo(Location::class);
     }
+
 }

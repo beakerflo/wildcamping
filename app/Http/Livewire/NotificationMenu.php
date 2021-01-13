@@ -10,6 +10,7 @@ class NotificationMenu extends Component {
     public $isVisible = False;
     public $loggedOn = False;
     public $user = '';
+    public $notificationCount = 0;
 
     public function toggle() {
         $this->isVisible = !$this->isVisible;

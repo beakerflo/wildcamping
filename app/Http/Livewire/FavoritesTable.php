@@ -2,10 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Favorite;
 use App\Models\Location;
-use App\Models\Source;
-use App\Models\Type;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -16,10 +14,17 @@ class FavoritesTable extends Component {
     public $record = '';
     public $paginate = 24;
     public $type = '';
+    public $team = '';
     public $source = '';
 
     public function getRecordDetails($id) {
         $this->record = Location::with('type','favorite','sources','coordinate.address.country.flag','visits')->find($id)->withDmsFormat();
+    }
+
+    public function setTeam() {
+        If ($this->team == '') {
+            $this->team = Auth::User()->currentTeam->name;
+        }
     }
 
     public function updatingSearch() {
@@ -27,7 +32,10 @@ class FavoritesTable extends Component {
     }
 
     public function render() {
+        $this->setTeam();
+
         $Favorites = Location::search($this->search)
+                        ->InTeam($this->team)
                         ->Favorites()
                         ->OfType($this->type)
                         ->FromSource($this->source)

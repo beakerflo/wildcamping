@@ -18,14 +18,9 @@ Route::get('/welcome', function () {
     return view('pages.welcome')->with('title', 'Welcome');
 })->name('welcome');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/home', function () {
     return view('pages.welcome');
 })->name('home');
-
 
 Route::name('pages.')->group(function () {
     Route::get('/pages/welcome', function () {
@@ -34,9 +29,6 @@ Route::name('pages.')->group(function () {
     Route::get('/', function () {
         return view('pages.welcome');
     })->name('home');
-    Route::get('/data', function () {
-        return view('pages.data');
-    })->name('data');
     Route::get('/documentation', function () {
         return view('pages.documentation');
     })->name('documentation');
@@ -57,20 +49,23 @@ Route::name('pages.')->group(function () {
     })->name('privacy');
 });
 
-Route::name('data.')->group(function () {
-    Route::get('/locations', function () {
+Route::middleware(['auth:sanctum', 'verified'])->name('data.')->group(function () {
+    Route::get('/data/overview', function () {
+        return view('data.overview');
+    })->name('overview');
+    Route::get('/data/locations', function () {
         return view('data.locations');
     })->name('locations');
-    Route::get('/sources', function () {
+    Route::get('/data/sources', function () {
         return view('data.sources');
     })->name('sources');
-    Route::get('/favorites', function () {
+    Route::get('/data/favorites', function () {
         return view('data.favorites');
     })->name('favorites');
-    Route::get('/visits', function () {
+    Route::get('/data/visits', function () {
         return view('data.visits');
     })->name('visits');
-    Route::get('/images', function () {
+    Route::get('/data/images', function () {
         return view('data.images');
     })->name('images');
 });

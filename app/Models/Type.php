@@ -33,4 +33,21 @@ class Type extends Model
         return $this->hasMany(Type::class);
     }
 
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $search) {
+        if(empty($search)) {
+            return $query;
+        } else {
+            return $query
+                ->where('name', 'like', '%' . $search . '%')
+                ->OrWhere('description', 'like', '%' . $search . '%');
+        }
+    }
+
 }

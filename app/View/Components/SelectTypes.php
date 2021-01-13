@@ -12,9 +12,8 @@ class SelectTypes extends Component
      *
      * @return void
      */
-    public function __construct($class = '')
-    {
-        $this->Class = $class;
+    public function __construct($class = '') {
+        $this->class = $class;
     }
 
     /**
@@ -26,7 +25,7 @@ class SelectTypes extends Component
     {
         return view('components.select-types', [
             'types' => Type::orderBy('name', 'asc')->get(),
-            'class' => $this->Class
+            'class' => $this->class
         ]);
     }
 }

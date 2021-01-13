@@ -22,4 +22,5 @@ class Language extends Model
     public function area() {
         return $this->belongsTo(Country::class, 'area_id');
     }
+
 }

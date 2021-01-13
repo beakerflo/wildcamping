@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Source extends Model
-{
+class Source extends Model {
     use HasFactory;
 
     /**
@@ -21,17 +20,17 @@ class Source extends Model
     ];
 
     /**
-     * Get the user created the source.
-     */
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
      * Get the locations from this source.
      */
     public function locations() {
         return $this->belongsToMany(Location::class);
+    }
+
+    /**
+     * Get the user that created or owns the record.
+     */
+    public function user() {
+        return $this->belongsTo(User::class);
     }
 
     /**
@@ -58,4 +57,21 @@ class Source extends Model
                 ->Orwhere('description', 'like', '%' . $search . '%');
         }
     }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeInTeam($query, $team) {
+
+        $LocationIds = Location::InTeam($team)->get()->pluck('id')->toArray();
+
+        return $query->whereHas('locations', function ($q) use ($LocationIds) {
+            $q->whereIn('locations.id', $LocationIds);
+        });
+    }
+
 }

@@ -4,14 +4,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.ButtonLeft {
-    @apply border border-gray-300 rounded rounded-r-none px-3 py-1 text-xs;
-}
-
-.ButtonRight {
-    @apply border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-1 text-xs;
-}
-
 .PrimaryBorderColor {
     @apply border-gray-300;
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Visit;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -12,6 +13,7 @@ class VisitsTable extends Component {
     public $search = '';
     public $record = '';
     public $paginate = 24;
+    public $team = '';
 
     public function getRecordDetails($id) {
         $this->record = Visit::with('location', 'location.type','location.sources','location.coordinate.address.country.flag')
@@ -22,7 +24,15 @@ class VisitsTable extends Component {
         $this->resetPage();
     }
 
+    public function setTeam() {
+        If ($this->team == '') {
+            $this->team = Auth::User()->currentTeam->name;
+        }
+    }
+
     public function render() {
+        $this->setTeam();
+
         $Visits = Visit::search($this->search)
                     ->with('location', 'location.type','location.sources','location.coordinate.address.country.flag');
 

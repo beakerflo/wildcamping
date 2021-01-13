@@ -55,4 +55,21 @@ class Image extends Model
                 ->Orwhere('name', 'like', '%' . $search . '%');
         }
     }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeInTeam($query, $team) {
+
+        $LocationIds = Location::InTeam($team)->get()->pluck('id')->toArray();
+
+        return $query->whereHas('location', function ($q) use ($LocationIds) {
+            $q->whereIn('id', $LocationIds);
+        });
+    }
+
 }

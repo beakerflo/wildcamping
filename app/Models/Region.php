@@ -22,4 +22,22 @@ class Region extends Model
     public function continent() {
         return $this->belongsTo(Continent::class);
     }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $search) {
+        if(empty($search)) {
+            return $query;
+        } else {
+            return $query
+                ->where('name', 'like', '%' . $search . '%')
+                ->OrWhere('name_nl', 'like', '%' . $search . '%');
+        }
+    }
+
 }

@@ -1,5 +1,5 @@
 <x-app-layout title="{{ __('Welcome to this page') }}" breadcrumb="pages,welcome">
-    <div class="container my-8 mx-auto mt-16 flex">
+    <div class="container my-8 mx-auto mt-10 flex">
         <div class="md:w-2/3 md:mr-6 px-4 py-4 space-y-6">
             <div>
                 <h1 class="text-2xl text-florange font-semibold">{{ __('Welcome')}}</h1>

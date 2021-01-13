@@ -20,7 +20,9 @@
 
         <x-sub-nav-bar>
             <x-breadcrumb route="{{ Route::currentRouteName() }}"/>
-            <x-statistics-bar />
+            @if(Auth::check())
+                <x-statistics-bar />
+            @endif
         </x-sub-nav-bar>
 
         {{ $slot }}
