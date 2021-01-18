@@ -67,11 +67,35 @@ class Source extends Model {
      */
     public function scopeInTeam($query, $team) {
 
-        $LocationIds = Location::InTeam($team)->get()->pluck('id')->toArray();
+        If (empty($team)) {
+            return $query;
+        } else {
+            $LocationIds = Location::InTeam($team)->get()->pluck('id')->toArray();
 
-        return $query->whereHas('locations', function ($q) use ($LocationIds) {
-            $q->whereIn('locations.id', $LocationIds);
-        });
+            return $query->whereHas('locations', function ($q) use ($LocationIds) {
+                $q->whereIn('locations.id', $LocationIds);
+            });
+        }
+    }
+
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeFilterOut($query, $filter = '') {
+
+        If (empty($filter)) {
+            return $query;
+        } else {
+            If (!is_array($filter)) {
+                $filter = array($filter);
+            }
+            return $query->whereNotIn('name', $filter);
+        }
+
     }
 
 }

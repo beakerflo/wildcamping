@@ -17,7 +17,7 @@ class CreateSourcesTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->string('name');
-            $table->string('link');
+            $table->string('link')->nullable();
             $table->string('description')->nullable();
             $table->timestamps();
             $table->softDeletes();

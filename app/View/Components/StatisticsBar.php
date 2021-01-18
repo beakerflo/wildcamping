@@ -17,7 +17,7 @@ class StatisticsBar extends Component
      * @return void
      */
     public function __construct() {
-        $this->team = Auth::User()->allTeams()->pluck('name')->toArray();
+        $this->team = Auth::user()->allTeamNames();
         $this->statistics = '';
     }
 

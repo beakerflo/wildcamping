@@ -43,4 +43,24 @@ class ModelWithTeams extends Model
         }
     }
 
+    /**
+     * Scope a query to only include records with specific search parameters.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $type
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeFilterOut($query, $filter = '') {
+
+        If (empty($filter)) {
+            return $query;
+        } else {
+            If (!is_array($filter)) {
+                $filter = array($filter);
+            }
+            return $query->whereNotIn('name', $filter);
+        }
+
+    }
+
 }

@@ -35,6 +35,34 @@ class Address extends Model
     }
 
     /**
+     * Get Address in a String
+     *
+     * @return void
+     */
+    public function getAddressString() {
+
+        $returnObject = '';
+
+        If ($this->road) {
+            $returnObject .= $this->road . ', ';
+        }
+        If ($this->postcode) {
+            $returnObject .= $this->postcode . ', ';
+        }
+        If ($this->part) {
+            $returnObject .= $this->part . ', ';
+        }
+        If ($this->city) {
+            $returnObject .= $this->city . ', ';
+        }
+        If ($this->state) {
+            $returnObject .= $this->state . ', ';
+        }
+
+        return substr($returnObject,0,-2);
+    }
+
+    /**
      * Scope a query to only include records with specific search parameters.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query

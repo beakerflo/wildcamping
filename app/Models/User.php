@@ -103,4 +103,11 @@ class User extends Authenticatable
         return $this->hasMany(Visit::class);
     }
 
+    /**
+     * Get the team names of allTeams
+     */
+    public function allTeamNames() {
+        return $this->allTeams()->pluck('name')->toArray();
+    }
+
 }

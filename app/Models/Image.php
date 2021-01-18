@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Image extends Model
 {
@@ -33,6 +34,21 @@ class Image extends Model
      */
     public function location() {
         return $this->belongsTo(Location::class);
+    }
+
+    /**
+     * Create a hashed FileName
+     *
+     * @param  mixed $file
+     * @return void
+     */
+    public static function HashFileName($file) {
+        $hash = Str::random(30);
+        $meta = '-meta' . substr(base64_encode($file->getClientOriginalName()),0,8);
+        $meta = str_replace('/', '_', $meta);
+        $extension = '.'.$file->guessExtension();
+
+        return $hash.$meta.$extension;
     }
 
     /**

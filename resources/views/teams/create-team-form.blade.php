@@ -4,7 +4,6 @@
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Create a new team to collaborate with others on projects.') }}
     </x-slot>
 
     <x-slot name="form">

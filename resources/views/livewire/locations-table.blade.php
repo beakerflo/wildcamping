@@ -3,11 +3,11 @@
         <x-data-table>
 
             <x-slot name="top">
-                <div class="space-x-1">
+                <div class="space-x-1 items-start">
                     <x-table-search-bar class="w-28 md:w-36 h-8 text-xs" />
-                    <x-select-types class="text-xs w-18 md:w-24 h-8" />
-                    <x-select-sources class="text-xs w-18 md:w-24 h-8" :teams="$Team" />
-                    <x-select-teams class="text-xs w-18 md:w-24 h-8" />
+                    <x-select-types class="text-xs w-28 h-8" />
+                    <x-select-sources class="text-xs w-28 h-8" :teams="$Team" />
+                    <x-select-teams class="text-xs w-28 h-8" />
                 </div>
                 <x-records-count count="{{ $Count }}" />
             </x-slot>
@@ -54,11 +54,11 @@
                         </div>
                     </div>
                     @endforeach
-                </x-slot>
+            </x-slot>
 
-                <x-slot name="footer">
-                    {{ $Records->links() }}
-                </x-slot>
+            <x-slot name="footer">
+                {{ $Records->links() }}
+            </x-slot>
 
         </x-data-table>
     </div>
@@ -70,6 +70,7 @@
                     <div class="flex space-x-1 items-center">
                         <x-record-private private="{{ $Record->isPrivate() }}" class="w-5 h-5" />
                         <x-record-favorite favorite="{{ $Record->isFavorite() }}" />
+                        <livewire:location-editor-modal>
                     </div>
                         <x-location-visit count="{{ $RecordDetails->visitCount() }}" />
                 </x-slot>
@@ -105,8 +106,8 @@
                                 <li>gps: {{ $RecordDetails->coordinate->latitude . ', ' . $RecordDetails->coordinate->longitude }}</li>
                                 <li>gps dms: {{ $RecordDetails->coordinate->latitude_dms . ' ' . $RecordDetails->coordinate->longitude_dms }}</li>
                                 @if ($RecordDetails->coordinate->what3words)
-                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->nl }}" target="blank">w3w (nl): {{ $RecordDetails->coordinate->what3words->nl }}</a></li>
-                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->en }}" target="blank">w3w (en): {{ $RecordDetails->coordinate->what3words->en }}</a></li>
+                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->nl }}" target="blank"><span class="text-red-500">///</span> {{ $RecordDetails->coordinate->what3words->nl }} (nl)</a></li>
+                                    <li><a class="hover:text-florange" href="https://what3words.com/{{ $RecordDetails->coordinate->what3words->en }}" target="blank"><span class="text-red-500">///</span> {{ $RecordDetails->coordinate->what3words->en }} (en)</a></li>
                                 @endif
                             </ul>
                         </div>
@@ -171,10 +172,11 @@
                 </x-slot>
 
                 <x-slot name="footer">
-
+                        <button class="text-floblue lowercase px-2 py-1 rounded-md shadow flex space-x-1">{{ __('Click here for more about the location') }}</button>
                 </x-slot>
 
             </x-data-table-details>
         </div>
     @endif
+
 </div>

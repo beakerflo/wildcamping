@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Auth;
 
 class Location extends ModelWithTeams {
     use HasFactory;
@@ -17,6 +18,7 @@ class Location extends ModelWithTeams {
         'description',
         'user_id',
         'type_id',
+        'source_id',
         'coordinate_id'
     ];
 
@@ -77,6 +79,19 @@ class Location extends ModelWithTeams {
     }
 
     /**
+     * Get the tags and put it in an array.
+     */
+    public function tagsToArray() {
+
+        if($this->tags->count() == 0) {
+            return '';
+        } else {
+            return join(", ", $this->tags->pluck('name')->toArray());
+        }
+
+    }
+
+    /**
      * Check if the location is a favorite
      */
     public function isFavorite() {
@@ -94,9 +109,9 @@ class Location extends ModelWithTeams {
      */
     public function isPrivate() {
         if ($this->private == 1) {
-            return TRUE;
+            return True;
         } else {
-            return FALSE;
+            return False;
         }
     }
 
@@ -138,6 +153,21 @@ class Location extends ModelWithTeams {
         } else {
             return $this;
         }
+    }
+
+    public function saveMeta() {
+        If (empty($this->user_id) or !isset($this->user_id)) {
+            $this->user_id = Auth::user()->id;
+        }
+
+        If (empty($this->private) or !isset($this->private)) {
+            $this->private = False;
+        }
+
+        If (empty($this->description) or !isset($this->description)) {
+            $this->description = False;
+        }
+
     }
 
     /**

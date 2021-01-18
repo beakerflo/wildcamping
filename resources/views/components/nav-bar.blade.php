@@ -26,11 +26,7 @@
         </div>
         <div class="flex space-x-4 items-center">
             <livewire:notification-menu>
-
-            @if(Auth::check())
-                <a href="#" class="hover:text-gray-300"><x-svg-picker subject="plus" size=6 /></a>
-            @endif
-
+            @if(Auth::check()) <livewire:location-editor-modal> @endif
             <livewire:profile-menu>
         </div>
     </div>
@@ -48,5 +44,4 @@
             </div>
         </div>
     </div>
-
 </nav>

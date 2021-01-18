@@ -1,4 +1,4 @@
-<select wire:model="type" class="appearance-none px-1 border border-florange-dark {{ $class }} rounded">
+<select wire:model="type" class="form-select mt-1 border border-florange-dark rounded {{ $class }}">
     <option value=''>{{ __('No filter') }}</option>
     @foreach($types as $type)
         <option>{{ $type->name }}</option>

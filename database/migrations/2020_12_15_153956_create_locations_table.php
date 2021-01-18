@@ -18,7 +18,7 @@ class CreateLocationsTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('type_id');
             $table->foreignId('coordinate_id');
-            $table->boolean('private')->default(false);
+            $table->boolean('private');
             $table->string('name');
             $table->text('description');
             $table->timestamps();

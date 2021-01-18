@@ -1,4 +1,4 @@
-<select wire:model="team" {{ $attributes->merge(['class' => 'appearance-none px-1 border border-florange-dark rounded']) }}>
+<select wire:model="team" {{ $attributes->merge(['class' => 'form-select mt-1 border border-florange-dark rounded']) }}>
     <option>{{ Auth::User()->currentTeam->name }}</option>
     @foreach(Auth::user()->allTeams() as $team)
         @if ($team->id != Auth::User()->currentTeam->id )
