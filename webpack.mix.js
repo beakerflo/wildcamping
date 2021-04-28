@@ -16,4 +16,8 @@ mix.js('resources/js/app.js', 'public/js')
         require('postcss-import'),
         require('tailwindcss'),
     ])
+    .copy('node_modules/leaflet/dist/leaflet.css', 'public/leaflet/leaflet.css')
+    .copy('node_modules/leaflet/dist/leaflet.js', 'public/leaflet/leaflet.js')
+    .copy('node_modules/leaflet/dist/leaflet.js.map', 'public/leaflet/leaflet.js.map')
+    .copyDirectory('node_modules/leaflet/dist/images', 'public/leaflet/images')
     .webpackConfig(require('./webpack.config'));

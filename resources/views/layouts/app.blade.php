@@ -9,6 +9,7 @@
 
         <title>{{ __($title) }} | {{ config('app.name', 'Laravel') }}</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        {!! $extraCss !!}
 
         @livewireStyles
 
@@ -31,5 +32,6 @@
 
         @stack('modals')
         @livewireScripts
+        {!! $extraJs !!}
     </body>
 </html>

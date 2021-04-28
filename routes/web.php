@@ -34,4 +34,5 @@ Route::middleware(['auth:sanctum', 'verified'])->name('data.')->group(function (
     Route::view('/data/favorites', 'data.favorites')->name('favorites');
     Route::view('/data/visits', 'data.visits')->name('visits');
     Route::view('/data/images', 'data.images')->name('images');
+    Route::view('/data/map', 'data.map')->name('map');
 });

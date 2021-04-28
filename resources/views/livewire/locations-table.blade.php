@@ -32,7 +32,7 @@
             <x-slot name="body">
                 @foreach($Records as $Record)
                     <div wire:click.prevent="getRecordDetails({{ $Record->id }})" class="flex flex-wrap md:flex-no-wrap justify-between px-2 md:px-4 py-2 hover:bg-gray-200">
-                        <div class="w-2/12 md:w-2/12 flex space-x-3 items-center">
+                        <div class="w-2/12 flex space-x-3 items-center">
                             <x-record-private private="{{ $Record->isPrivate() }}" class="hidden md:block" />
                             <div>{{ $Record->type->name }}</div>
                         </div>
